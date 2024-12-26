@@ -1,0 +1,37 @@
+---
+sidebar_position: 1
+---
+
+# Getting Started
+
+Go to Integrations page. For docs sync-ed to Github:
+
+### Install github app on the org, and grant access to the following repos:
+- Source repo (where code changes will be made that can serve as the trigger/context for doc changes)
+- Doc repo (where documentation files live)
+
+### Steps to Connect Github
+1. Go to the Integrations page
+2. You’ll see the following screen. Click Configure.
+
+<img src="/img/github_app_config.png" alt="Github Integration Configuration Screen" style={{width:"700px"}} />
+
+3. Grant access to promptless on selected repos (source and docs), if they are in the same repo, even simpler!
+
+<img src="/img/github_app_grant_access.png" alt="Github Integration Configuration Screen - Select Repo" style={{width:"400px"}} />
+
+### Create a project 
+Creating a project will let Promptless index your docs and find the right place to sugggest a change.
+Triggers:
+- Slack: Promptless runs when you tag it or when you use the message shortcut in slack
+- Github: Promptless runs upon opening a PR in the source repo
+
+If you want to have both triggers, create two separate projects with all other information the same.
+
+### Steps to Create a Project
+1. Go to the Projects page, Click on New Project, you’ll see this modal
+
+<img src="/img/create_project.png" alt="Create Project Modal" style={{width:"700px"}} />
+2. Give it any name you like. For the trigger, select Github and the source repo name
+3. For the docs location, select Github and the docs repo name, or select the same repo as before, but put in the docs directory (eg. docs, no slashes needed)
+4. You can select the context source for Promptless from Linear, Jira, Google drive, or Slack
