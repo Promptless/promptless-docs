@@ -20,6 +20,16 @@ Promptless can be triggered directly from Slack in two ways:
 
 1. **Message Action**: Use the Promptless message shortcut on any Slack message to trigger documentation analysis
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
+3. **Create New Documentation**: You can now create entirely new documentation directly from Slack by tagging Promptless
+4. **Direct Messages**: Promptless now supports documentation updates through Slack DMs
+
+### Enhanced Slack Integration Features
+
+Recent improvements to our Slack integration include:
+- Support for creating new documentation from Slack conversations
+- Ability to manage documentation through direct messages
+- Enhanced thread analysis for better context understanding
+- Team information integration for improved documentation relevance
 
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
 
