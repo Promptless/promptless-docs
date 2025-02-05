@@ -25,17 +25,6 @@ If you don't see the integration you need, please let us know at [help@gopromptl
 
 ## Step 2: Create a project
 
-{/* ### Steps to Connect Github
-1. Go to the Integrations page
-2. You’ll see the following screen. Click Configure.
-
-<img src="/img/github_app_config.png" alt="Github Integration Configuration Screen" style={{width:"700px"}} />
-
-3. Grant access to promptless on selected repos (source and docs), if they are in the same repo, even simpler!
-
-<img src="/img/github_app_grant_access.png" alt="Github Integration Configuration Screen - Select Repo" style={{width:"400px"}} />
- */}
-
 Once you've set up integrations, visit the [Projects page](https://app.gopromptless.ai/projects). Creating a project will let Promptless index your docs and find the right place to sugggest a change. You can set up different types of triggers for different projects:
 - Slack: Promptless runs when you tag it or when you use the message shortcut in Slack
 - Github: Promptless runs upon opening a PR in any of the source repos you specify in the Project
@@ -46,12 +35,15 @@ A new project for a Github PR trigger might look like this:
 
 <img src="/img/new-project.png" alt="New Project for Github PR Trigger" style={{width:"600px", display: "block", margin: "0 auto", marginBottom: "20px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
 
+## Step 3: Configure Notification Settings
+
+After creating your project, you can configure how you want to be notified about Promptless suggestions. Visit the User Settings tab in the dashboard to set up your notification preferences:
+
+* **Slack Channel Notifications**: Specify a Slack channel where Promptless should send all documentation update suggestions. This helps your team stay informed and review suggestions in one place.
+* **GitHub PR Comments**: Configure whether Promptless should leave comments on GitHub PRs when it:
+  - Detects that documentation updates are needed
+  - Determines that no documentation updates are necessary
+
+These notification settings help ensure that your team never misses a documentation update suggestion from Promptless.
+
 And that's it! Promptless will start listening for events on your Projects' triggers, and draft a documentation updates for you to review.
-
-{/* ### Steps to Create a Project
-1. Go to the Projects page, Click on New Project, you’ll see this modal
-
-<img src="/img/create_project.png" alt="Create Project Modal" style={{width:"700px"}} />
-2. Give it any name you like. For the trigger, select Github and the source repo name
-3. For the docs location, select Github and the docs repo name, or select the same repo as before, but put in the docs directory (eg. docs, no slashes needed)
-4. You can select the context source for Promptless from Linear, Jira, Google drive, or Slack */}
