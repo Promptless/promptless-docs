@@ -1,7 +1,10 @@
----
-sidebar_position: 1
----
-
 # Context Sources
 
-Context sources help ground promptless in your organization's context. We currently support Slack, Jira, and Linear. If your docs need other context sources, feel free to email [help@gopromptless.ai](mailto:help@gopromptless.ai). 
+Context sources are integrations that connect promptless to an organization's existing tools and data, enabling it to understand and operate within the organization's specific context. Currently supported integrations include:
+
+- Slack
+- Jira  
+- Linear
+- Zendesk
+
+Additional context source integrations can be requested by emailing help@gopromptless.ai.
