@@ -12,6 +12,8 @@ Triggers are events that tell Promptless that there might be a documentation upd
 
 When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates in a separate PR, and link to it with a comment on the original PR. If there are no changes to the documentation, Promptless leave a comment that it didn't find any changes to the documentation.
 
+With auto-publish enabled, Promptless will automatically create a documentation PR when changes are needed, without requiring manual approval. This feature can be configured during project setup and helps streamline the documentation update process.
+
 ### Slack Integration
 
 When configured, Promptless can be triggered from Slack channels to find documentation updates that may be warranted from a thread. Primarily, this is used in Slack Connect support channels with customers -- where in a thread, a customer asks a question about your product, your team has answered it, and when Promptless is triggered, it suggests documentation updates based on the content of the thread. This is particularly useful if you notice a common question that you think should be answered in the docs. 
