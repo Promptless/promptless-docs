@@ -9,22 +9,16 @@ Context sources are integrations that connect Promptless to your organization's 
 ## Supported Integrations
 
 ### Slack
-- **Purpose**: Provides access to support conversations, team discussions, and institutional knowledge
-- **Key Benefits**:
   - Analyzes support conversations to identify documentation gaps
   - Understands company-specific terminology and common pain points
   - Enables direct interaction with Promptless through mentions and message actions
 
 ### Jira
-- **Purpose**: Connects to your project management and issue tracking
-- **Key Benefits**:
   - References related tickets when suggesting documentation updates
   - Understands feature context from epics and user stories
   - Maintains alignment between documentation and project status
 
 ### Linear
-- **Purpose**: Integrates with your product development workflow
-- **Key Benefits**:
   - Links documentation updates to relevant issues
   - Understands feature context and implementation details
   - Maintains documentation synchronization with development cycles
