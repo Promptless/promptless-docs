@@ -21,5 +21,13 @@ Promptless can be triggered directly from Slack in two ways:
 1. **Message Action**: Use the Promptless message shortcut on any Slack message to trigger documentation analysis
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
 
-Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
+## Auto-Publish Feature
 
+Promptless includes an auto-publish feature that can automatically create pull requests with documentation changes. When enabled, this feature works across both GitHub PR and Slack triggers:
+
+- For GitHub PRs: When Promptless detects necessary documentation updates, it will automatically create a PR with the changes and link to it in the comment on the original PR.
+- For Slack triggers: After analyzing a conversation and identifying documentation updates, Promptless will automatically create a PR with the changes and provide the PR link in its response message.
+
+This feature streamlines the documentation update process by eliminating the need for manual PR creation. The auto-publish feature is particularly useful for teams that want to maintain a continuous documentation update workflow with minimal manual intervention.
+
+Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
