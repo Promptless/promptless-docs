@@ -11,4 +11,6 @@ We also offer beta support for additional CMS platforms including:
 - Intercom
 - Pylon
 
+Note: Some documentation platforms, such as Paligo, are not currently supported.
+
 Contact us at hello@gopromptless.ai to learn more about using Promptless with these platforms.
