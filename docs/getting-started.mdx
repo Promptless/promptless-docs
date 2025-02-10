@@ -37,12 +37,27 @@ A new project for a Github PR trigger might look like this:
 
 ## Step 3: Configure Notification Settings
 
-After creating your project, you can configure how you want to be notified about Promptless suggestions. Visit the User Settings tab in the dashboard to set up your notification preferences:
+After creating your project, you'll want to configure how you want to be notified about Promptless suggestions. Visit the User Settings tab in the dashboard to set up your notification preferences:
 
-* **Slack Channel Notifications**: Specify a Slack channel where Promptless should send all documentation update suggestions. This helps your team stay informed and review suggestions in one place.
-* **GitHub PR Comments**: Configure whether Promptless should leave comments on GitHub PRs when it:
-  - Detects that documentation updates are needed
-  - Determines that no documentation updates are necessary
+### Slack Channel Notifications
+You can configure Promptless to send all documentation update suggestions to a specific Slack channel, making it easy for your team to review and approve changes:
+
+1. Go to the User Settings tab in the Promptless dashboard
+2. Under "Notification Preferences," find the "Slack Notifications" section
+3. Select or enter the Slack channel where you want to receive notifications (e.g., #docs-updates)
+4. Save your preferences
+
+When Promptless generates a documentation update suggestion, it will automatically send a message to your specified channel with:
+- A summary of the suggested changes
+- Links to review the full suggestion
+- Quick actions to approve or request modifications
+
+### GitHub PR Comments
+You can also configure how Promptless interacts with your GitHub PRs:
+
+* **Documentation Updates Required**: Choose whether Promptless should comment on PRs when it detects that documentation updates are needed
+* **No Updates Required**: Configure whether Promptless should leave a comment confirming when no documentation updates are necessary
+* **Comment Style**: Select between detailed or summary-only comments
 
 These notification settings help ensure that your team never misses a documentation update suggestion from Promptless.
 
