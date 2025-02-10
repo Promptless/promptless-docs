@@ -10,5 +10,12 @@ We also offer beta support for additional CMS platforms including:
 - Zendesk
 - Intercom
 - Pylon
+- Notion (with database support)
+
+For Notion integration, you can:
+- Connect to your Notion workspace
+- Select specific databases for documentation
+- Push documentation updates directly to Notion pages
+- Maintain bi-directional sync between Notion and other documentation sources
 
 Contact us at hello@gopromptless.ai to learn more about using Promptless with these platforms.
