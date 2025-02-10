@@ -9,7 +9,7 @@ Welcome to Promptless! 🎉
 
 Promptless automatically updates your docs, saving your team time and improving your customers' experience with your product.
 
-Before you start, you'll need a Promptless account. If you don't have one yet, contact our team at [hello@gopromptless.ai](mailto:hello@gopromptless.ai) to get one. Once you have an account, you can configure Promptless in just two easy steps: (1) you'll set up integrations to connect Promptless to your triggers, context sources, and docs, and (2) you'll create a project to tell Promptless what to do when it's triggered.
+Before you start, you'll need a Promptless account. If you don't have one yet, contact our team at [hello@gopromptless.ai](mailto:hello@gopromptless.ai) to get one. Once you have an account, you can configure Promptless in three easy steps: (1) set up integrations to connect Promptless to your triggers, context sources, and docs, (2) create a project to tell Promptless what to do when it's triggered, and (3) configure your notification preferences to ensure your team stays informed about documentation updates.
 
 ## Step 1: Set up integrations
 
@@ -37,13 +37,29 @@ A new project for a Github PR trigger might look like this:
 
 ## Step 3: Configure Notification Settings
 
-After creating your project, you can configure how you want to be notified about Promptless suggestions. Visit the User Settings tab in the dashboard to set up your notification preferences:
+After creating your project, it's important to set up your notification preferences to ensure your team stays informed about documentation updates. Visit the User Settings tab in the dashboard to configure how and where you want to receive Promptless notifications.
 
-* **Slack Channel Notifications**: Specify a Slack channel where Promptless should send all documentation update suggestions. This helps your team stay informed and review suggestions in one place.
-* **GitHub PR Comments**: Configure whether Promptless should leave comments on GitHub PRs when it:
-  - Detects that documentation updates are needed
-  - Determines that no documentation updates are necessary
+### Slack Channel Notifications
+You can designate a specific Slack channel where Promptless will send all documentation update suggestions. This creates a centralized place for your team to:
+* Review all documentation update suggestions
+* Track pending documentation changes
+* Ensure no suggestions are missed
+* Collaborate on documentation reviews
 
-These notification settings help ensure that your team never misses a documentation update suggestion from Promptless.
+To set this up:
+1. Go to User Settings in the Promptless dashboard
+2. Select your preferred Slack channel from the dropdown
+3. Save your preferences
 
-And that's it! Promptless will start listening for events on your Projects' triggers, and draft a documentation updates for you to review.
+### GitHub PR Comments
+Promptless can automatically comment on GitHub PRs to keep developers informed about documentation needs. You can configure whether Promptless should:
+* Leave comments when documentation updates are needed, including:
+  - What documentation changes are suggested
+  - Which files need to be updated
+  - Why the changes are necessary
+* Add confirmation comments when no documentation updates are required
+* Include links to relevant documentation in the comments
+
+These notification settings help streamline the documentation review process and ensure that your team never misses important documentation updates.
+
+And that's it! Promptless will start listening for events on your Projects' triggers, and draft documentation updates for you to review.
