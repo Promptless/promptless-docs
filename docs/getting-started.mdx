@@ -37,13 +37,35 @@ A new project for a Github PR trigger might look like this:
 
 ## Step 3: Configure Notification Settings
 
-After creating your project, you can configure how you want to be notified about Promptless suggestions. Visit the User Settings tab in the dashboard to set up your notification preferences:
+After creating your project, it's important to set up your notification preferences to ensure you never miss a documentation update suggestion. Here's how to configure your notification settings:
 
-* **Slack Channel Notifications**: Specify a Slack channel where Promptless should send all documentation update suggestions. This helps your team stay informed and review suggestions in one place.
-* **GitHub PR Comments**: Configure whether Promptless should leave comments on GitHub PRs when it:
-  - Detects that documentation updates are needed
-  - Determines that no documentation updates are necessary
+1. Navigate to the User Settings tab in the Promptless dashboard
+2. Look for the "Notification Preferences" section
+3. Configure the following options:
 
-These notification settings help ensure that your team never misses a documentation update suggestion from Promptless.
+### Slack Notifications
+* **Channel Selection**: Choose a specific Slack channel where all Promptless suggestions should be sent
+  - Click "Configure Slack Channel"
+  - Select your desired channel from the dropdown
+  - This ensures your team has a dedicated space to review all documentation suggestions
+* **Notification Format**: Promptless will send a message with:
+  - A summary of the suggested documentation changes
+  - Links to review the changes
+  - Quick actions to approve or request modifications
+
+### GitHub PR Notifications
+* **Update Required Notifications**: Configure whether Promptless should comment on PRs when documentation updates are needed
+  - Includes links to the suggested documentation changes
+  - Provides context about why the update is necessary
+* **No Updates Required Notifications**: Choose if Promptless should leave a comment when no documentation updates are needed
+  - Helps maintain transparency in your development process
+  - Confirms that documentation was reviewed
+
+### Additional Settings
+* **Email Notifications**: Optional backup notifications for high-priority updates
+* **Notification Frequency**: Choose between immediate notifications or daily digests
+* **Team Member Mentions**: Configure if specific team members should be tagged in notifications
+
+These notification settings help ensure that your team stays informed about documentation updates while maintaining an organized workflow. You can adjust these settings at any time as your team's needs evolve.
 
 And that's it! Promptless will start listening for events on your Projects' triggers, and draft a documentation updates for you to review.
