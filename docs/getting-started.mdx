@@ -37,13 +37,26 @@ A new project for a Github PR trigger might look like this:
 
 ## Step 3: Configure Notification Settings
 
-After creating your project, you can configure how you want to be notified about Promptless suggestions. Visit the User Settings tab in the dashboard to set up your notification preferences:
+After creating your project, you can configure how you want to be notified about Promptless suggestions. Notifications can be configured in two ways:
 
-* **Slack Channel Notifications**: Specify a Slack channel where Promptless should send all documentation update suggestions. This helps your team stay informed and review suggestions in one place.
-* **GitHub PR Comments**: Configure whether Promptless should leave comments on GitHub PRs when it:
-  - Detects that documentation updates are needed
-  - Determines that no documentation updates are necessary
+### Slack Channel Notifications
+
+In your project settings, you can specify a Slack channel where Promptless will send notifications about documentation updates. When configured, notifications will include:
+- Links to the trigger source (PR or Slack message)
+- A summary of the trigger context
+- Links to review the suggested changes
+- Links to any auto-generated documentation PRs
+
+If no Slack channel is configured, notifications will be sent via direct message to the user who triggered Promptless.
+
+### GitHub PR Comments
+
+For GitHub-triggered updates, Promptless will automatically:
+- Comment on the source PR when documentation updates are needed
+- Create a separate documentation PR with the suggested changes
+- Link to the documentation PR in the source PR comment
+- Indicate when no documentation updates are necessary
 
 These notification settings help ensure that your team never misses a documentation update suggestion from Promptless.
 
-And that's it! Promptless will start listening for events on your Projects' triggers, and draft a documentation updates for you to review.
+And that's it! Promptless will start listening for events on your Projects' triggers, and draft documentation updates for you to review.
