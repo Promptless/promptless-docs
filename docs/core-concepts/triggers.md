@@ -21,5 +21,16 @@ Promptless can be triggered directly from Slack in two ways:
 1. **Message Action**: Use the Promptless message shortcut on any Slack message to trigger documentation analysis
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
 
-Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
+## Documentation Update Tracking
 
+When a trigger is activated, Promptless creates and maintains a detailed record of the documentation update process. Each documentation update run tracks:
+
+- The type and source of the trigger (GitHub PR, Slack message, etc.)
+- The current status of the update process
+- Whether any documentation updates were identified
+- A summary of the trigger context
+- The final response and any actions taken
+
+This tracking system ensures transparency in the documentation update process and helps maintain a history of how your documentation evolves over time.
+
+Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
