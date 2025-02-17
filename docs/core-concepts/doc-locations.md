@@ -7,18 +7,8 @@ sidebar_position: 2
 Most often, no matter which hosting provider (Readme, Mintlify, Docusaurus) you use, as long as your docs are sync-ed to github, all you need is to install the Promptless Github App.
 
 We also offer beta support for additional CMS platforms including:
-
-### Zendesk
-Direct integration with Zendesk Help Center articles.
-
-### Intercom
-Full integration with Intercom Help Center, including:
-- Automatic syncing with your Intercom articles
-- Support for article creation and updates
-- Preservation of Intercom-specific formatting and structure
-- Integration with Intercom's conversation history for context-aware updates
-
-### Pylon
-Direct integration with Pylon documentation system.
+- Zendesk
+- Intercom
+- Pylon
 
 Contact us at hello@gopromptless.ai to learn more about using Promptless with these platforms.
