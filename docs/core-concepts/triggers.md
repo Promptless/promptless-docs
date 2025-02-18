@@ -21,5 +21,19 @@ Promptless can be triggered directly from Slack in two ways:
 1. **Message Action**: Use the Promptless message shortcut on any Slack message to trigger documentation analysis
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
 
-Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
+### Demo Documentation Scraping
 
+Promptless can analyze and process documentation from external websites through its demo scraping feature. This allows you to:
+
+1. Input any website URL containing documentation
+2. Automatically scrape and clean the documentation content
+3. Process the content for analysis and integration
+
+This feature is particularly useful when:
+- Evaluating Promptless with your existing documentation
+- Analyzing documentation structure and content
+- Testing documentation improvements
+
+The demo scraping feature requires authentication and can be accessed through the Promptless dashboard.
+
+Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
