@@ -15,7 +15,7 @@ Before you start, you'll need a Promptless account. If you don't have one yet, c
 
 Once you're signed into the [Promptless dashboard](https://app.gopromptless.ai/), visit the [Integrations page](https://app.gopromptless.ai/integrations). From there, you should set up the following integrations:
 
-* Your triggers (e.g. Github or Slack). You can trigger Promptless from new Github PRs and from the Promptless Slack message action (primarily used in Slack Connect support channels). If you're connecting Github, make sure to give Promptless access to your source code repos that you want Promptless to be triggered from, as well the repo containing your docs.  
+* Your triggers (e.g. Github, Slack, or Intercom). You can trigger Promptless from new Github PRs, from the Promptless Slack message action (primarily used in Slack Connect support channels), or from Intercom conversations. If you're connecting Github, make sure to give Promptless access to your source code repos that you want Promptless to be triggered from, as well the repo containing your docs.  
 * [Optional] Your context sources (e.g. Linear, Jira, Google Drive). You can connect Promptless to your Linear, Jira, Google Drive, or Slack accounts to get context from these sources. The more relevant context you provide, the better Promptless will be at suggesting changes.
 * Your docs (typically a Github repo). If your docs are in a directory within a Github repo, you'll be able to set the directory when you create a project. If your docs are hosted by [Readme](https://readme.com/) and are not synced to Github, use the Readme API key integration. 
 
@@ -28,8 +28,9 @@ If you don't see the integration you need, please let us know at [help@gopromptl
 Once you've set up integrations, visit the [Projects page](https://app.gopromptless.ai/projects). Creating a project will let Promptless index your docs and find the right place to sugggest a change. You can set up different types of triggers for different projects:
 - Slack: Promptless runs when you tag it or when you use the message shortcut in Slack
 - Github: Promptless runs upon opening a PR in any of the source repos you specify in the Project
+- Intercom: Promptless monitors your Intercom conversations for potential documentation updates
 
-If you want to have both triggers, create two separate projects with all other information the same. You'll also be able to set up context sources for each project, to instruct Promptless on which Linear Teams, Jira Projects, Google Drive folders, etc to search when generating suggestions. 
+If you want to have multiple trigger types, create separate projects with all other information the same. You'll also be able to set up context sources for each project, to instruct Promptless on which Linear Teams, Jira Projects, Google Drive folders, etc to search when generating suggestions. 
 
 A new project for a Github PR trigger might look like this:
 
