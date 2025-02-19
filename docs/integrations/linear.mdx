@@ -1,0 +1,52 @@
+# Linear Integration
+
+Linear is a powerful project management tool that can be integrated with Promptless as a context source. This integration allows Promptless to understand your team's project context when suggesting documentation updates.
+
+## Setup
+
+To integrate Linear with Promptless:
+
+1. Navigate to the Promptless dashboard
+2. Go to the Integrations section
+3. Click on "Add Integration" and select Linear
+4. Follow the OAuth flow to authorize Promptless with your Linear workspace
+
+## Configuration
+
+After connecting Linear, you can configure which teams and projects Promptless should monitor:
+
+1. In your Promptless project settings, locate the "Context Sources" section
+2. Select the Linear teams you want to include
+3. Choose which Linear issue states should be considered (e.g., In Progress, Done)
+
+## Usage
+
+Once configured, Promptless will use Linear context when:
+
+- Analyzing GitHub Pull Requests for documentation impact
+- Processing Slack support conversations
+- Generating documentation suggestions
+
+### Example Use Cases
+
+- **Pull Request Context**: When reviewing a PR, Promptless can link related Linear issues to provide more context for documentation updates
+- **Support Conversations**: When analyzing Slack discussions, Promptless can reference Linear issues to better understand feature context
+- **Documentation Gaps**: Promptless can suggest documentation updates based on frequently referenced Linear issues in support conversations
+
+## Permissions
+
+Promptless requires the following Linear permissions:
+
+- Read access to issues
+- Read access to team information
+- Read access to projects
+
+## Troubleshooting
+
+If you encounter issues with the Linear integration:
+
+1. Verify your Linear workspace connection in the Promptless dashboard
+2. Ensure the selected teams are still active in Linear
+3. Check that your Linear OAuth token hasn't expired
+
+For additional support, contact help@gopromptless.ai
