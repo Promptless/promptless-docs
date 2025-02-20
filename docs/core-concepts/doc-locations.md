@@ -13,22 +13,15 @@ We also offer beta support for additional CMS platforms including:
 
 ## Publishing Process
 
-When publishing documentation updates through Promptless, you'll receive real-time feedback on the status of your changes:
+Documentation updates are published according to your platform:
 
 ### GitHub-synced Documentation
-- Changes are submitted as pull requests
-- After successful publishing, you'll see a link to view the PR on GitHub
-- Any errors during the process will be clearly displayed
+Changes are submitted as pull requests to your documentation repository
 
 ### ReadMe Integration
-- Direct publishing to your ReadMe documentation
-- Success confirmation when changes are published
-- Link to view the updated article on ReadMe
-- Clear error messages if publishing fails
+Changes are published directly to your ReadMe documentation
 
 ### Other Platforms
-- Platform-specific success confirmations
-- Links to view published content on respective platforms (Intercom, Zendesk)
-- Detailed error messages if issues occur during publishing
+Updates are published directly to your respective platform (Intercom, Zendesk)
 
 Contact us at hello@gopromptless.ai to learn more about using Promptless with these platforms.
