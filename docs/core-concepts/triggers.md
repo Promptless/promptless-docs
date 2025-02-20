@@ -20,7 +20,7 @@ Once Promptless creates a documentation update PR, you can request further edits
 
 ### Slack Integration
 
-When configured, Promptless can be triggered from Slack channels to find documentation updates that may be warranted from a thread. Primarily, this is used in Slack Connect support channels with customers -- where in a thread, a customer asks a question about your product, your team has answered it, and when Promptless is triggered, it suggests documentation updates based on the content of the thread. This is particularly useful if you notice a common question that you think should be answered in the docs. 
+When configured, Promptless can be triggered from Slack channels to find documentation updates that may be warranted from a thread. Primarily, this is used in Slack Connect support channels with customers -- where in a thread, a customer asks a question about your product, your team has answered it, and when Promptless is triggered, it suggests documentation updates based on the content of the thread.
 
 Promptless can be triggered directly from Slack in two ways:
 
@@ -28,4 +28,3 @@ Promptless can be triggered directly from Slack in two ways:
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
 
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
-
