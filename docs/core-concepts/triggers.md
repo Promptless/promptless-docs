@@ -21,16 +21,13 @@ Promptless can be triggered directly from Slack in two ways:
 1. **Message Action**: Use the Promptless message shortcut on any Slack message to trigger documentation analysis
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
 
-## Documentation Update Tracking
+### Intercom Integration
 
-When a trigger is activated, Promptless creates and maintains a detailed record of the documentation update process. Each documentation update run tracks:
+When configured, Promptless monitors your Intercom conversations for potential documentation updates. This integration helps identify common questions or issues that arise in customer conversations, automatically suggesting documentation improvements to better serve your users. Promptless analyzes the conversation content to determine if any documentation updates or additions would be beneficial.
 
-- The type and source of the trigger (GitHub PR, Slack message, etc.)
-- The current status of the update process
-- Whether any documentation updates were identified
-- A summary of the trigger context
-- The final response and any actions taken
+Promptless is automatically triggered in Intercom in two ways:
 
-This tracking system ensures transparency in the documentation update process and helps maintain a history of how your documentation evolves over time.
+1. **Conversation Close**: When a conversation with a customer is closed, Promptless analyzes the conversation for potential documentation updates
+2. **Note Added**: When a team member adds a note to a conversation, Promptless reviews the context for documentation opportunities
 
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
