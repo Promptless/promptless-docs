@@ -25,4 +25,9 @@ Promptless can be triggered directly from Slack in two ways:
 
 When configured, Promptless monitors your Intercom conversations for potential documentation updates. This integration helps identify common questions or issues that arise in customer conversations, automatically suggesting documentation improvements to better serve your users. Promptless analyzes the conversation content to determine if any documentation updates or additions would be beneficial.
 
+Promptless is automatically triggered in Intercom in two ways:
+
+1. **Conversation Close**: When a conversation with a customer is closed, Promptless analyzes the conversation for potential documentation updates
+2. **Note Added**: When a team member adds a note to a conversation, Promptless reviews the context for documentation opportunities
+
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
