@@ -1,10 +1,15 @@
+---
+sidebar_position: 1
+---
+
 # Network Architecture
 
-Promptless utilizes a secure, modern network architecture designed for reliability, security, and scalability. Our infrastructure is built on industry-leading cloud platforms with multiple layers of security controls and redundancy.
+Promptless utilizes a secure, modern cloud-based network architecture designed for reliability, security, and scalability. Our infrastructure is built on industry-leading cloud platforms with multiple layers of security controls and redundancy.
 
 ## Infrastructure Overview
 
-[Diagram to be added: High-level network architecture diagram showing key components and security layers]
+<img src="/img/simplified_network_architecture.png" alt="Simplified Network Architecture" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
 
 Our infrastructure is designed with the following key principles:
 - Security by design at every layer
@@ -12,82 +17,14 @@ Our infrastructure is designed with the following key principles:
 - Scalability and performance optimization
 - Comprehensive monitoring and observability
 
-## Security Architecture
+## Key Security Measures
 
-### Network Security Measures
+While we can't highlight all of Promptless's security measures here, we've highlighted some of the key ones below:
+* Data encryption in transit: All data at rest is encrypted using TLS 1.2 or later.
+* Data encryption at rest: Data stored in Promptless's database is encrypted with AES-256.
+* Data access controls: We use a combination of access controls, including role-based access control (RBAC), to ensure that only authorized users have access to sensitive data.
+* Principle of least privilege: We only give users the minimum permissions they need for their role.
+* Logical separation of data: All data is tagged with customer identifiers, to ensure multiple layers of logical separation between Promptless users 
 
-#### Perimeter Security
-- Enterprise-grade firewall protection with intelligent threat detection
-- Advanced DDoS protection and mitigation
-- Web Application Firewall (WAF) for application-layer protection
-- Regular security scans and vulnerability assessments
-
-#### Network Segmentation
-- Strict network segregation between components
-- Micro-segmentation for enhanced security control
-- Private networking for sensitive operations
-- Network access control lists (NACLs) and security groups
-
-#### Traffic Management
-- Load balancing with SSL/TLS termination
-- Traffic encryption between all services
-- Rate limiting and request throttling
-- Automated traffic analysis and anomaly detection
-
-### Infrastructure Security
-
-#### Cloud Infrastructure
-- Deployment across multiple availability zones
-- Automated failover and disaster recovery
-- Regular security patches and updates
-- Immutable infrastructure practices
-
-#### Monitoring and Alerting
-- 24/7 infrastructure monitoring
-- Real-time security event detection
-- Automated incident response procedures
-- Performance and availability monitoring
-
-#### Backup and Recovery
-- Automated backup procedures
-- Cross-region data replication
-- Disaster recovery testing
-- Business continuity planning
-
-## Access Control
-
-### Network Access
-- Zero trust network architecture
-- VPC isolation for customer environments
-- Bastion hosts for administrative access
-- Strict access control lists
-
-### API Security
-- Secure API gateway with authentication
-- Rate limiting and quota management
-- API key rotation and management
-- Regular security audits of API endpoints
-
-### Administrative Access
-- Multi-factor authentication required
-- Just-in-time access provisioning
-- Audit logging of all administrative actions
-- Regular access review and rotation
-
-## Compliance and Standards
-
-Our network architecture adheres to industry best practices and security standards:
-- Regular compliance assessments
-- Third-party security audits
-- Penetration testing
-- Security control validation
-
-## Enterprise Features
-
-Enterprise customers receive additional network security features:
-- Custom network security policies
-- Dedicated virtual private clouds
-- Advanced network monitoring
-- Custom security controls
 
 For more detailed information about our network architecture or to discuss specific security requirements, please contact our security team at help@gopromptless.ai.
