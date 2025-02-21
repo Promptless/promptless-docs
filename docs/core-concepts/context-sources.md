@@ -9,10 +9,12 @@ Context sources are integrations that connect Promptless to your organization's 
 ## Supported Context Sources
 
 Promptless integrates with several key platforms to gather context:
-- Project Management Tools (eg. Linear, Jira)
-- Communication Platforms (eg. Slack, MS Teams)
-- Customer Support Platforms (eg. Intercom, Zendesk)
-- Document Storage (eg. Google Drive, Confluence)
+- Project Management Tools (Linear, Jira)
+- Communication Platforms (Slack)
+- Customer Support Platforms (Intercom)
+- Document Storage (Google Drive)
+
+Our Intercom integration is particularly valuable as it provides both context from customer conversations and serves as a documentation platform, allowing for seamless updates to your Help Center content.
 
 ## Additional Context Sources
 
