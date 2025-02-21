@@ -4,22 +4,45 @@ sidebar_position: 2
 
 # Docs Locations
 
-Most often, no matter which hosting provider (Readme, Mintlify, Docusaurus) you use, as long as your docs are sync-ed to github, all you need is to install the Promptless Github App.
+Promptless supports multiple documentation platforms and helps you maintain consistency across all your documentation locations. Here's how you can integrate Promptless with different documentation systems:
+
+## GitHub-Based Documentation
+For documentation hosted on platforms that sync with GitHub (including Readme, Mintlify, and Docusaurus), the setup process is straightforward:
+
+1. Install the Promptless GitHub App on your documentation repository
+2. Configure your documentation project in the Promptless dashboard
+3. Promptless will automatically:
+   - Monitor repository changes
+   - Suggest documentation updates
+   - Create pull requests for review
+   - Maintain version control
 
 ## Zendesk Integration
-Promptless offers native integration with Zendesk Help Center documentation. After connecting your Zendesk account through the Promptless dashboard, you can:
-- Automatically update Zendesk Help Center articles
-- Create new documentation drafts directly in Zendesk
-- Maintain version control and review processes for your Zendesk content
+Promptless integrates directly with Zendesk Help Center to streamline your documentation workflow:
+
+1. Connect your Zendesk account through the Promptless dashboard
+2. Select the Help Center sections you want to monitor
+3. Promptless will:
+   - Track product changes and support interactions
+   - Update relevant Help Center articles
+   - Create new documentation when needed
+   - Maintain your documentation review process
 
 ## Intercom Integration
-Promptless provides native integration with Intercom's Help Center. Once you've connected your Intercom account through the Promptless dashboard, you can:
-- Automatically update Intercom Help Center articles
-- Create new documentation drafts directly in Intercom
-- Maintain version control and review processes for your Intercom content
+For teams using Intercom's Help Center, Promptless provides:
+
+1. Direct integration with your Intercom workspace
+2. Automated updates based on product changes
+3. Support for your existing article structure
+4. Version control and review workflows
 
 ## Additional CMS Support
-We also offer beta support for additional CMS platforms including:
+We offer beta support for additional CMS platforms, including:
 - Pylon
 
-Contact us at hello@gopromptless.ai to learn more about using Promptless with these platforms.
+## Getting Started
+1. For GitHub-based documentation: [Install our GitHub App](https://github.com/apps/promptless)
+2. For Zendesk or Intercom: Log into your Promptless dashboard to connect your account
+3. For other platforms: Contact us at hello@gopromptless.ai
+
+Need help setting up? Our team is ready to assist you with any integration questions.
