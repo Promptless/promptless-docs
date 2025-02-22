@@ -1,37 +1,36 @@
 # Linear Integration
 
-Promptless integrates with Linear to provide context-aware documentation updates based on your project management data.
+**Used for: Context**
 
-## Authentication
+Promptless integrates with Linear through OAuth 2.0, providing secure access to your project management data for documentation automation.
 
-- Uses OAuth 2.0 for secure authorization
-- Read-only access to issue data
-- No permanent storage of issue content
+## Installation
 
-## Features
+1. Click "Connect Linear" from the [integrations page](https://app.gopromptless.ai/integrations).
+<img src="/img/integrations-blank.png" alt="Integrations Page" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-- **Issue Context**: Use Linear issues for documentation context
-- **Project Alignment**: Keep documentation in sync with project status
-- **Automated References**: Link documentation to relevant issues
+2. You'll be redirected to Linear to sign in to the right organization, if you are not already signed into the web app.
+<img src="/img/linear-signin.png" alt="Linear Organization Selection" style={{width:"400px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+<img src="/img/linear-auth.png" alt="Linear Organization Selection" style={{width:"400px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-## Security Features
 
-- **OAuth 2.0**: Secure authorization protocol
-- **Read-only Access**: Limited to viewing issue data
-- **Data Processing**: No permanent storage of issue content
-- **Encryption**: All data encrypted in transit and at rest
+3. Once you're signed in, you'll be redirected back to Promptless, and you can verify that Linear is connected.
+<img src="/img/integrations-complete.png" alt="Linear Integration Complete" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-## Configuration
+## Project Setup and Permissions
 
-1. Connect your Linear account through OAuth
-2. Select which teams/projects to monitor
-3. Configure documentation update triggers
-4. Set up notification preferences
+After connecting Linear, you can configure which teams you'd like Promptless to search within when setting up a Project in the [projects page](https://app.gopromptless.ai/projects). Promptless will not be able to search within teams that you do not select. 
 
-## Best Practices
+For example, in the below example project, Promptless will only search within the `PRO` team for relevant issues.  
 
-- Regular review of access permissions
-- Monitor Linear audit logs
-- Configure appropriate issue visibility settings
+<img src="/img/Github-project.png" alt="Project Setup" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
 
-For additional security information, refer to our [Security and Privacy documentation](/security-and-privacy).
+## Authentication Model
+
+Promptless uses OAuth 2.0 to authenticate with Linear, following their [official Linear OAuth 2.0 specification](https://developers.linear.app/docs/oauth/authentication). This ensures:
+
+- Secure token-based authentication
+- Ability to revoke access at any time
+- Granular permission control at the team level
+- Regular token rotation for enhanced security
+

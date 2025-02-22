@@ -1,46 +1,41 @@
 # Slack Integration
 
-Promptless integrates with Slack through our official Slack App, enabling automated documentation updates based on support conversations and team communication.
+**Used for: Triggers**
+
+Promptless integrates with Slack through our official Slack App, enabling automated documentation updates based on team communication and support conversations.
 
 ## Installation
 
-1. Install the Promptless Slack App to your workspace
-2. Select which channels Promptless can access
-3. Configure notification preferences in your Promptless project settings
+1. Click "Connect Slack" from the [integrations page](https://app.gopromptless.ai/integrations).
+<img src="/img/integrations-blank.png" alt="Integrations Page" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-## Features
+2. You'll be redirected to Slack to install the Promptless app. **Be sure to select the right workspace to install Promptless.**
+<img src="/img/workspace-select.png" alt="Slack Workspace Selection" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-- **Message Actions**: Trigger documentation reviews from any message
-- **Direct Mentions**: Tag Promptless in conversations for documentation assistance
-- **Support Conversation Analysis**: Automatically identify documentation gaps
-- **Channel Notifications**: Receive updates about documentation changes
+3. Review and approve the requested permissions for the Promptless Slack app. Promptless requires these permissions to be able to be triggered from the right events in Slack and to notify your team when updates are available.
+<img src="/img/slack-permissions.png" alt="Slack Permissions" style={{width:"400px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-## Security Features
+4. Verify that Slack is connected in the integrations page.
+<img src="/img/integrations-complete.png" alt="Slack Integration Complete" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-- **OAuth 2.0**: Secure authorization protocol for authentication
-- **App-based integration**: Official Slack App with defined permission scopes
-- **Workspace-level control**: Manage access at the workspace level
-- **Channel-specific settings**: Configure which channels Promptless can access
+## Project Setup and Permissions
 
-## Data Processing
+After installing the Slack app, you can configure new projects in the [projects page](https://app.gopromptless.ai/projects) to be set up to trigger from Slack. 
 
-- Messages are processed only when explicitly triggered
-- No permanent storage of message content
-- All data is encrypted in transit and at rest
-- Processing is limited to documentation-relevant content
+Below is an example of a project that is set up to trigger from Slack. 
 
-## Configuration
+<img src="/img/slack-project.png" alt="Slack Project Setup" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
 
-In your Promptless project settings, you can:
-1. Select which channels to monitor
-2. Configure notification preferences
-3. Set up trigger keywords or phrases
-4. Manage team access permissions
+Once the Project is created, you will be able to trigger Promptless by writing @Promptless in a Slack channel, or by clicking Slack "Update Docs" message action on any thread. When you perform either of these actions, Promptless will pull the entire thread it was tagged in, and idnentify the right documentation updates based on the contents of that thread. 
 
-## Best Practices
+**Note:** Promptless cannot read threads in private channels that it has not been invited to. 
 
-- Use channel-specific configurations
-- Regularly review access settings
-- Monitor Slack audit logs for Promptless activities
+## Authentication Model
 
-For additional security information, refer to our [Security and Privacy documentation](/security-and-privacy).
+Promptless uses Slack's [official App authentication](https://api.slack.com/authentication), which provides:
+
+- Secure OAuth 2.0 token-based authentication
+- Granular permission scopes
+- Ability to revoke access at the workspace or channel level
+- Regular token rotation for enhanced security
+
