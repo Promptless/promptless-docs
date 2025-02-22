@@ -1,29 +1,26 @@
 # Zendesk Integration
 
-Promptless integrates with Zendesk through OAuth 2.0, enabling automated documentation updates based on support ticket patterns and customer interactions.
+**Used for: Triggers and Publishing**
+
+Promptless integrates with Zendesk through OAuth 2.0, enabling automated documentation updates based on support ticket patterns and customer interactions, as well as enabling publishing of updates to Zendesk's CMS (Help Center).
 
 ## Installation
 
 1. Click "Connect Zendesk" from the [integrations page](https://app.gopromptless.ai/integrations).
 <img src="/img/zendesk-integrations-blank.png" alt="Integrations Page" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-2. Enter your Zendesk subdomain and click continue.
-{/* <img src="/img/zendesk-subdomain.png" alt="Zendesk Subdomain Entry" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} /> */}
+2. Review the requested permissions and approve the Promptless app.
+<img src="/img/zendesk-permissions.png" alt="Zendesk Subdomain Entry" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
-3. Review and approve the requested permissions on the Zendesk authorization page.
-{/* <img src="/img/zendesk-permissions.png" alt="Zendesk Permissions" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} /> */}
-
-4. Verify that Zendesk is connected in the integrations page.
-{/* <img src="/img/zendesk-integration-complete.png" alt="Zendesk Integration Complete" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} /> */}
+3. Verify that Zendesk is connected in the integrations page.
+<img src="/img/zendesk-integration-complete.png" alt="Zendesk Integration Complete" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
 
 ## Project Setup and Permissions
 
-After connecting Zendesk, you can configure ticket monitoring settings in the [projects page](https://app.gopromptless.ai/projects). When setting up a project, you can:
+After connecting Zendesk, you can configure ticket monitoring settings in the [projects page](https://app.gopromptless.ai/projects). When setting up a project, you can: 
 
-- Select which ticket fields to monitor
-- Configure ticket tags that trigger documentation updates
-- Set up custom field mappings
-- Define documentation update rules based on ticket patterns
+- Set up a Zendesk trigger so that Promptless will be notified when a ticket is resolved
+- Set up a publishing project so that Promptless will publish updates to the Zendesk Help Center 
 
 <img src="/img/zendesk-project-setup.png" alt="Zendesk Project Setup" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
 
