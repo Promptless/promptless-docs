@@ -17,7 +17,7 @@ Our privacy policy covers important aspects of data handling, including:
 ## Complete Privacy Policy
 
 For the complete, current version of our privacy policy, please visit:
-[Promptless Privacy Policy](https://www.promptless.ai/privacy)
+[Promptless Privacy Policy](https://www.gopromptless.ai/privacy)
 
 ## Privacy Inquiries
 
