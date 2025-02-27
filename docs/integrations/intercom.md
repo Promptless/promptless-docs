@@ -10,8 +10,8 @@ Promptless offers integration with Intercom to help you maintain accurate and up
 
 The Intercom integration enables Promptless to:
 
-- Sync your Intercom Help Center articles into the Promptless system
-- Maintain article metadata including article IDs and parent-child relationships
+- Access and index your Intercom Help Center articles
+- Store article metadata including article IDs and parent-child relationships
 - Process HTML content from Intercom articles
 - Generate appropriate documentation update suggestions based on triggers
 
@@ -40,10 +40,19 @@ To use the Intercom integration with Promptless, you'll need:
 
 When configured, Promptless will:
 
-1. Periodically sync your Intercom articles to maintain an up-to-date representation of your Help Center
+1. Sync your Intercom articles to maintain an up-to-date representation of your Help Center
 2. Store article content and metadata including article IDs and hierarchical relationships
 3. Process the HTML content of your articles for analysis
 4. When triggers (like code changes or support conversations) indicate potential documentation needs, Promptless will suggest updates to your Intercom articles
+
+## Technical Implementation
+
+Behind the scenes, Promptless:
+
+- Stores article IDs and parent-child relationships as metadata
+- Processes HTML content from Intercom articles
+- Uses specialized ID generation for Intercom articles
+- Maintains the relationship between article titles and their corresponding IDs
 
 ## Limitations
 
