@@ -8,9 +8,17 @@ Triggers are events that tell Promptless that there might be a documentation upd
 
 ## Supported Triggers
 
-### GitHub Pull Requests
+### Code Repository Pull Requests
+
+Promptless supports automated documentation updates triggered by pull requests from multiple code repository platforms:
+
+#### GitHub Pull Requests
 
 When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates. By default, these suggestions will be available in the Promptless dashboard for review. If auto-publish is enabled for your project, Promptless will automatically create a new PR with the suggested documentation changes and link to it in a comment on the original PR. If there are no changes to the documentation, Promptless will leave a comment indicating that no documentation updates were necessary.
+
+#### Bitbucket Pull Requests
+
+Similar to GitHub, Promptless monitors Bitbucket repositories for pull request events. When a pull request is created, updated, or merged, Promptless analyzes the changes for potential documentation impacts. Documentation suggestions are available in the Promptless dashboard, and with auto-publish enabled, Promptless can automatically create documentation updates based on the changes.
 
 ### Slack Integration
 

@@ -1,0 +1,47 @@
+# Bitbucket
+
+Promptless integrates with Bitbucket through an official Bitbucket Connect app, enabling automated documentation updates based on your pull request activity.
+
+## Setup Process
+
+1. Navigate to the Integrations page in your Promptless dashboard
+2. Click "Connect" next to the Bitbucket integration
+3. You'll be redirected to Bitbucket to authorize the Promptless app
+4. Select the account where you want to install Promptless
+5. Review and approve the requested permissions
+6. You'll be redirected back to Promptless to complete the setup
+
+## Required Permissions
+
+The Bitbucket integration requires the following permissions:
+- Account: For basic account information
+- Repository: To access repository content and pull requests
+- Pull Request: To monitor pull request events
+
+## Functionality
+
+Once connected, Promptless will automatically monitor your Bitbucket repositories for:
+- New pull requests
+- Updates to existing pull requests
+- Merged pull requests
+
+When these events occur, Promptless analyzes the changes to determine if documentation updates are needed. If updates are warranted, Promptless will either:
+- Create suggestions in your Promptless dashboard for review
+- Automatically create documentation updates if auto-publish is enabled for your project
+
+## Security
+
+The Bitbucket integration follows Promptless's security best practices:
+- JWT-based authentication
+- TLS 1.2+ encryption for data in transit
+- AES-256 encryption for data at rest
+- Minimal data retention - only processes pull request data when events occur
+
+## Disconnecting
+
+To disconnect the Bitbucket integration:
+1. Go to the Integrations page in your Promptless dashboard
+2. Click "Disconnect" next to the Bitbucket integration
+3. Confirm the disconnection
+
+You can also uninstall the Promptless app directly from your Bitbucket account settings.
