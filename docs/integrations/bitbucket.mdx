@@ -1,0 +1,49 @@
+# Bitbucket Integration
+
+Promptless integrates with Bitbucket through an official Bitbucket Forge app, enabling automated documentation updates triggered by pull requests in your Bitbucket repositories.
+
+## Setup Process
+
+1. Navigate to the Integrations page in your Promptless dashboard
+2. Click "Connect" on the Bitbucket integration card
+3. Enter your Bitbucket workspace name
+4. You'll be redirected to Bitbucket to install the Promptless Forge app
+5. Select the repositories you want Promptless to access
+6. Confirm the installation
+
+## Repository Access
+
+When setting up the Bitbucket integration, you'll need to grant access to two types of repositories:
+
+1. **Source Repositories**: These are the repositories where Promptless will monitor pull requests for potential documentation impacts. Promptless needs read-only access to these repositories.
+2. **Documentation Repositories**: If you store your documentation in Bitbucket, you'll need to grant read-write access to these repositories so Promptless can create documentation update PRs.
+
+## Authentication & Security
+
+The Bitbucket integration uses:
+- Bitbucket's Forge app infrastructure for secure authentication
+- Repository-specific access controls
+- Encrypted data transmission and storage
+
+## Using the Integration
+
+Once connected, you can:
+1. Create projects that trigger on Bitbucket pull requests
+2. Select specific repositories to monitor for changes
+3. Enable auto-publishing of documentation updates
+4. Configure notification settings for documentation suggestions
+
+## Workspace-Level Installation
+
+The Bitbucket integration is installed at the workspace level. This means:
+- All repositories in the workspace can be accessed (based on your selection during installation)
+- Multiple projects can use the same Bitbucket integration
+- Repository access can be managed through Bitbucket's app settings
+
+## Troubleshooting
+
+If you encounter issues with the Bitbucket integration:
+1. Verify your workspace name is correct
+2. Check repository permissions in Bitbucket's app settings
+3. Ensure the Promptless Forge app is properly installed
+4. Contact support at help@gopromptless.ai for assistance
