@@ -8,9 +8,17 @@ Triggers are events that tell Promptless that there might be a documentation upd
 
 ## Supported Triggers
 
-### GitHub Pull Requests
+### Source Control Pull Requests
 
-When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates. By default, these suggestions will be available in the Promptless dashboard for review. If auto-publish is enabled for your project, Promptless will automatically create a new PR with the suggested documentation changes and link to it in a comment on the original PR. If there are no changes to the documentation, Promptless will leave a comment indicating that no documentation updates were necessary.
+Promptless supports automated documentation updates triggered by pull requests from multiple source control platforms:
+
+#### GitHub Pull Requests
+
+When configured, Promptless automatically runs whenever a new pull request is opened in your specified GitHub repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates. By default, these suggestions will be available in the Promptless dashboard for review. If auto-publish is enabled for your project, Promptless will automatically create a new PR with the suggested documentation changes and link to it in a comment on the original PR. If there are no changes to the documentation, Promptless will leave a comment indicating that no documentation updates were necessary.
+
+#### Bitbucket Pull Requests
+
+Similar to GitHub, Promptless can monitor your Bitbucket repositories for new pull requests. When a new PR is opened in your specified Bitbucket repositories, Promptless analyzes the changes and suggests relevant documentation updates. These suggestions are available in the Promptless dashboard for review, and with auto-publish enabled, Promptless will automatically create documentation update PRs as needed.
 
 ### Slack Integration
 
