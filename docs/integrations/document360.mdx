@@ -1,0 +1,34 @@
+# Document360 Integration
+
+**Used for: Publishing**
+
+Promptless integrates with Document360 to enable automated publishing of documentation updates to your Document360 knowledge base.
+
+## Installation
+
+1. Click "Connect Document360" from the [integrations page](https://app.gopromptless.ai/integrations).
+2. Enter your Document360 API token.
+   - You can find your API token in your Document360 account settings
+   - The API token is used to securely authenticate and publish updates to your knowledge base
+
+3. Verify that Document360 is connected in the integrations page.
+
+## Project Setup
+
+After connecting Document360, you can configure publishing settings in the [projects page](https://app.gopromptless.ai/projects). When setting up a project, you can configure Promptless to publish documentation updates directly to your Document360 knowledge base.
+
+## Authentication Model
+
+Promptless uses Document360's API token-based authentication, which provides:
+
+- Secure API token authentication
+- Ability to revoke access at any time by regenerating the API token
+- Encrypted token storage (AES-256)
+- TLS 1.2+ encryption for all API communications
+
+## Disconnecting Document360
+
+You can disconnect Document360 at any time from the integrations page. This will:
+- Remove the stored API token
+- Stop any automated publishing to Document360
+- Not affect any existing content in your Document360 knowledge base
