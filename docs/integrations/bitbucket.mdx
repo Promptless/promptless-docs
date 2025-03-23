@@ -1,0 +1,28 @@
+# Bitbucket Integration
+
+**Used for: Triggers and Publishing**
+
+Promptless integrates with Bitbucket through our official Bitbucket Connect app, providing secure access to your repositories for documentation automation.
+
+## Installation
+
+1. Click "Connect Bitbucket" from the [integrations page](https://app.gopromptless.ai/integrations).
+
+2. Select your Bitbucket workspace where you want to install Promptless.
+
+3. Authorize Promptless to access your Bitbucket workspace.
+
+4. Verify that Promptless is connected in the integrations page.
+
+## Project Setup and Permissions
+
+After setting up the integration, you'll be able to create a project in the [projects page](https://app.gopromptless.ai/projects). When creating a project, you'll be able to select trigger repositories and documentation repositories. Promptless will have read-only access to the repositories that you select as trigger repositories, and will have write access to the repositories that you select as documentation repositories.
+
+## Authentication Model
+
+Promptless uses the official [Bitbucket Connect app specification](https://developer.atlassian.com/cloud/bitbucket/connect-apps/) to authenticate with Bitbucket. The integration uses OAuth 2.0 for secure authentication and authorization.
+
+This ensures that:
+- Promptless has appropriate read and write access to your selected repositories
+- Access can be revoked at any time through your Bitbucket workspace settings
+- All interactions are authenticated and logged for security purposes
