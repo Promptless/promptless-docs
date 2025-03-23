@@ -1,0 +1,41 @@
+# Paligo Integration
+
+**Used for: Publishing**
+
+Promptless integrates with Paligo to enable automated updates to your technical documentation.
+
+## Installation
+
+1. Click "Connect Paligo" from the [integrations page](https://app.gopromptless.ai/integrations).
+
+2. Enter your Paligo credentials:
+   - Username (your Paligo instance name)
+   - API key (found in your Paligo settings)
+
+3. Verify that Promptless is connected in the integrations page.
+
+## Project Setup
+
+After setting up the integration, you can create a project in the [projects page](https://app.gopromptless.ai/projects). When configuring your project:
+
+1. Select Paligo as your documentation platform
+2. Choose which documentation folders you want Promptless to manage
+3. Configure your auto-publishing preferences
+
+## Authentication Model
+
+Promptless uses Paligo's API authentication system, which requires:
+- Your Paligo instance username
+- A valid API key from your Paligo account
+
+This ensures:
+- Secure access to your documentation
+- Ability to manage content programmatically
+- Full audit trail of all documentation changes
+- Easy access revocation if needed
+
+## Security Considerations
+
+- API credentials are encrypted at rest using AES-256
+- All API communications use TLS 1.2+
+- API keys can be rotated or revoked at any time through Paligo's interface
