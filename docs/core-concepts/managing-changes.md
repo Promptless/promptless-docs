@@ -30,12 +30,3 @@ To manage individual changes:
 2. Click "Approve" to accept the changes
 3. Click "Reject" to decline the changes
 4. (Optional) Provide feedback about why a change was rejected
-
-## Bulk Actions
-
-To manage multiple changes efficiently, you can:
-
-- **Approve All**: Accept all suggested changes in the current view
-- **Reject All**: Decline all suggested changes in the current view
-
-These bulk actions help you manage documentation updates more efficiently, especially when dealing with multiple related changes.
