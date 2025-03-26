@@ -40,11 +40,13 @@ To manage multiple changes efficiently, you can:
 
 These bulk actions help you manage documentation updates more efficiently, especially when dealing with multiple related changes.
 
-## Best Practices
+## Change History Retention
 
-When managing documentation changes:
+Promptless maintains a history of all documentation changes, including:
 
-1. Review each change carefully to ensure accuracy
-2. Consider the context provided with each suggestion
-3. Use bulk actions when appropriate, such as when all suggestions follow a similar pattern
-4. Provide feedback when rejecting changes to help improve future suggestions
+- Approved changes
+- Rejected changes
+- The context that triggered each suggestion
+- Who reviewed the changes and when
+
+This history helps maintain accountability and provides a record of how your documentation has evolved over time.
