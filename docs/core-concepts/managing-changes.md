@@ -48,14 +48,3 @@ When managing documentation changes:
 2. Consider the context provided with each suggestion
 3. Use bulk actions when appropriate, such as when all suggestions follow a similar pattern
 4. Provide feedback when rejecting changes to help improve future suggestions
-
-## Change History Retention
-
-Promptless maintains a history of all documentation changes, including:
-
-- Approved changes
-- Rejected changes
-- The context that triggered each suggestion
-- Who reviewed the changes and when
-
-This history helps maintain accountability and provides a record of how your documentation has evolved over time.
