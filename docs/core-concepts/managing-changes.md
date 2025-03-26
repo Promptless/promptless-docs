@@ -39,14 +39,3 @@ To manage multiple changes efficiently, you can:
 - **Reject All**: Decline all suggested changes in the current view
 
 These bulk actions help you manage documentation updates more efficiently, especially when dealing with multiple related changes.
-
-## Change History Retention
-
-Promptless maintains a history of all documentation changes, including:
-
-- Approved changes
-- Rejected changes
-- The context that triggered each suggestion
-- Who reviewed the changes and when
-
-This history helps maintain accountability and provides a record of how your documentation has evolved over time.
