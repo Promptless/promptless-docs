@@ -10,9 +10,7 @@ Triggers are events that tell Promptless that there might be a documentation upd
 
 ### GitHub Pull Requests
 
-When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates. By default, these suggestions will be available in the Promptless dashboard for review. If auto-publish is enabled for your project, Promptless will automatically create a new PR with the suggested documentation changes and link to it in a comment on the original PR. If there are no changes to the documentation, Promptless will leave a comment indicating that no documentation updates were necessary.
-
-During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
+When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates in a separate PR, and link to it with a comment on the original PR. If there are no changes to the documentation, Promptless leave a comment that it didn't find any changes to the documentation.
 
 ### Slack Integration
 
@@ -23,13 +21,13 @@ Promptless can be triggered directly from Slack in two ways:
 1. **Message Action**: Use the Promptless message shortcut on any Slack message to trigger documentation analysis
 2. **Mentions**: Tag Promptless in a channel to request documentation updates
 
-### Intercom Integration
+## Auto-Publish Feature
 
-When configured, Promptless monitors your Intercom conversations for potential documentation updates. This integration helps identify common questions or issues that arise in customer conversations, automatically suggesting documentation improvements to better serve your users. Promptless analyzes the conversation content to determine if any documentation updates or additions would be beneficial.
+Promptless includes an auto-publish feature that can automatically create pull requests with documentation changes. When enabled, this feature works across both GitHub PR and Slack triggers:
 
-Promptless is automatically triggered in Intercom in two ways:
+- For GitHub PRs: When Promptless detects necessary documentation updates, it will automatically create a PR with the changes and link to it in the comment on the original PR.
+- For Slack triggers: After analyzing a conversation and identifying documentation updates, Promptless will automatically create a PR with the changes and provide the PR link in its response message.
 
-1. **Conversation Close**: When a conversation with a customer is closed, Promptless analyzes the conversation for potential documentation updates
-2. **Note Added**: When a team member adds a note to a conversation, Promptless reviews the context for documentation opportunities
+This feature streamlines the documentation update process by eliminating the need for manual PR creation. The auto-publish feature is particularly useful for teams that want to maintain a continuous documentation update workflow with minimal manual intervention.
 
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
