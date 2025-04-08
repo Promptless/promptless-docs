@@ -11,4 +11,4 @@ We also offer beta support for additional CMS platforms including:
 - Intercom
 - Pylon
 
-Contact us at hello@gopromptless.ai to learn more about using Promptless with these platforms.
+Promptless is flexible and can integrate with any CMS platform that provides an API. If you're using a different CMS and would like to integrate it with Promptless, please contact us at hello@gopromptless.ai to discuss adding support for your CMS platform.
