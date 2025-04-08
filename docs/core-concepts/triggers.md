@@ -14,6 +14,18 @@ When configured, Promptless automatically runs whenever a new pull request is op
 
 During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
 
+### Bitbucket Pull Requests
+
+Similar to GitHub, Promptless can be configured to automatically run when a new pull request is opened in your Bitbucket repositories. The integration analyzes the changes in the PR to determine if documentation updates are needed.
+
+When Promptless identifies necessary documentation changes, it will:
+- Generate suggested documentation updates based on the PR content
+- Make these suggestions available in the Promptless dashboard for review
+- If auto-publish is enabled, create a new PR with the documentation changes
+- Add a comment on the original Bitbucket PR with a link to the documentation changes
+
+The Bitbucket integration supports the same follow-on request capabilities as the GitHub integration, allowing you to provide additional feedback or instructions during the review process.
+
 ### Slack Integration
 
 When configured, Promptless can be triggered from Slack channels to find documentation updates that may be warranted from a thread. Primarily, this is used in Slack Connect support channels with customers -- where in a thread, a customer asks a question about your product, your team has answered it, and when Promptless is triggered, it suggests documentation updates based on the content of the thread. This is particularly useful if you notice a common question that you think should be answered in the docs. 
