@@ -1,0 +1,49 @@
+# Bitbucket Integration
+
+**Used for: Triggers, Context, and Publishing**
+
+Promptless integrates with Bitbucket using App passwords, providing secure access to your repositories for documentation automation with the ability to select specific repositories.
+
+## Installation
+
+1. Click "Connect Bitbucket" from the [integrations page](https://app.gopromptless.ai/integrations).
+<img src="https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/1ab250ef-08c8-479b-ab3e-51fa37986bdf-bitbucket-integration-button.png" alt="Bitbucket Integration Button" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
+2. You'll need to create an App password in Bitbucket for Promptless. Follow these steps:
+   - Create an App password on Bitbucket for Promptless
+   - Ensure the required permissions are checked:
+     - Account Read
+     - Projects Read
+     - Repositories Write
+     - Pull Requests Write
+     - Webhooks Read and Write
+   - Enter your Bitbucket username and the App password created for Promptless
+
+<img src="https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/1ab250ef-08c8-479b-ab3e-51fa37986bdf-bitbucket-auth-screen.png" alt="Bitbucket Authentication Screen" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
+3. After authentication, you'll be able to select which specific repositories you want to give Promptless access to. Repositories are shown as "Workspace > Project > Repository".
+
+<img src="https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/1ab250ef-08c8-479b-ab3e-51fa37986bdf-bitbucket-repo-selection.png" alt="Bitbucket Repository Selection" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
+4. Click "Connect Promptless to Bitbucket" to complete the integration.
+
+## Project Setup and Permissions
+
+After setting up the integration, you'll be able to create a project in the [projects page](https://app.gopromptless.ai/projects). When creating a project, you'll be able to select trigger repositories and documentation repositories from your connected Bitbucket account.
+
+Similar to the GitHub integration, Promptless will have read-only access to the repositories that you select as trigger repositories, and will have write access to the repositories that you select as documentation repositories.
+
+## Authentication Model
+
+Promptless uses Bitbucket's App password authentication method to securely connect to your Bitbucket account. This approach allows:
+
+- Repository-specific access control
+- Granular permission settings
+- The ability to revoke access at any time by deleting the App password in your Bitbucket account
+
+App passwords provide a secure way for applications like Promptless to access your Bitbucket account without requiring your primary account credentials. [Learn more about App passwords](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/).
+
+## Helpful Links
+
+- [Create an App password in Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-an-app-password/)
+- [Find your Bitbucket username](https://support.atlassian.com/bitbucket-cloud/docs/find-your-bitbucket-cloud-username/)
