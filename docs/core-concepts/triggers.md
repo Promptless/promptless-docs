@@ -12,13 +12,13 @@ Triggers are events that tell Promptless that there might be a documentation upd
 
 When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates. By default, these suggestions will be available in the Promptless dashboard for review. If auto-publish is enabled for your project, Promptless will automatically create a new PR with the suggested documentation changes and link to it in a comment on the original PR. If there are no changes to the documentation, Promptless will leave a comment indicating that no documentation updates were necessary.
 
-During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
+During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature (temporarily unavailable). This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
 
 ### Bitbucket Pull Requests (Beta)
 
 Similar to GitHub, Promptless can be triggered by pull requests in Bitbucket repositories. When a new pull request is opened in your specified Bitbucket repositories, Promptless analyzes the changes and suggests documentation updates if needed. You can configure specific directories to monitor for changes, allowing you to focus documentation efforts on the most relevant parts of your codebase.
 
-The workflow for Bitbucket triggers follows the same pattern as GitHub triggers, with options for auto-publishing and follow-on requests to streamline your documentation process.
+The workflow for Bitbucket triggers follows the same pattern as GitHub triggers, with options for auto-publishing and follow-on requests (temporarily unavailable) to streamline your documentation process.
 
 ### Slack Integration
 
