@@ -30,6 +30,27 @@ Once the Project is created, you will be able to trigger Promptless by writing @
 
 **Note:** Promptless cannot read threads in private channels that it has not been invited to. 
 
+## Processing Slack Thread Links
+
+Promptless can now process links to Slack threads when they appear in messages. This allows you to reference valuable conversations without having to trigger Promptless in the original thread.
+
+### How It Works
+
+1. When you share a Slack thread link (e.g., https://workspace.slack.com/archives/channel/timestamp) in a message where Promptless is triggered, it will automatically detect the link.
+
+2. Promptless will extract the channel ID and timestamp from the link to identify the specific thread.
+
+3. Using the Slack API, Promptless retrieves all messages from that thread and analyzes them for potential documentation updates.
+
+4. The content from the linked thread is processed just as if Promptless had been triggered directly in that thread.
+
+This feature is particularly useful when:
+- You want to reference a previous conversation that contains valuable information
+- You're discussing multiple threads that should be consolidated into a single documentation update
+- You need to include context from a thread in a channel where Promptless isn't installed
+
+**Note:** Promptless must have access to the channel containing the linked thread to retrieve its content.
+
 ## Image Processing in Slack Threads
 
 Promptless can now process images shared in Slack threads when triggered, enhancing documentation with visual elements when appropriate.
