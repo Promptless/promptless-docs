@@ -20,6 +20,8 @@ Similar to GitHub, Promptless can be triggered by pull requests in Bitbucket rep
 
 The workflow for Bitbucket triggers follows the same pattern as GitHub triggers, with options for auto-publishing and follow-on requests to streamline your documentation process. Promptless will add comments to your Bitbucket pull requests indicating whether documentation updates were necessary, and if so, provide links to review those changes.
 
+Note that Promptless automatically skips draft pull requests in Bitbucket. Documentation updates will only be triggered when the pull request is marked as ready for review.
+
 ### Slack Integration
 
 When configured, Promptless can be triggered from Slack channels to find documentation updates that may be warranted from a thread. Primarily, this is used in Slack Connect support channels with customers -- where in a thread, a customer asks a question about your product, your team has answered it, and when Promptless is triggered, it suggests documentation updates based on the content of the thread. This is particularly useful if you notice a common question that you think should be answered in the docs. 
