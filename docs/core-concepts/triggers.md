@@ -12,7 +12,10 @@ Triggers are events that tell Promptless that there might be a documentation upd
 
 When configured, Promptless automatically runs whenever a new pull request is opened in your specified source repositories. If there are any changes in the PR that might impact the documentation, Promptless will suggest documentation updates. By default, these suggestions will be available in the Promptless dashboard for review. If auto-publish is enabled for your project, Promptless will automatically create a new PR with the suggested documentation changes and link to it in a comment on the original PR. If there are no changes to the documentation, Promptless will leave a comment indicating that no documentation updates were necessary.
 
-During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
+During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input. Follow-on requests can be made in two ways:
+
+1. **PR Comments**: Add a comment on the documentation PR with specific instructions for changes
+2. **Web Interface**: Submit follow-on requests directly through the Promptless dashboard when reviewing documentation updates
 
 ### Bitbucket Pull Requests
 

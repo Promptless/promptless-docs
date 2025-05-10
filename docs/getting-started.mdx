@@ -33,15 +33,27 @@ If you want to have both triggers, create two separate projects with all other i
 
 For GitHub or Bitbucket-based projects, you can enable auto-publish to automatically create pull requests with documentation changes. When enabled, Promptless will create a new PR with suggested documentation updates whenever it detects necessary changes, rather than requiring manual review and PR creation through the dashboard.
 
-When reviewing documentation updates in the dashboard, you can use the follow-on request feature to ask Promptless for additional changes or refinements to its initial suggestions. This is particularly useful when you want to provide specific feedback or request modifications to the proposed documentation updates.
-
 A new project for a Github PR trigger might look like this:
 
 <img src="https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/b738f190-487b-43e4-b3ad-1378d1e17fb1-new-project-modal.png" alt="Create New Project modal" style={{width:"600px", display: "block", margin: "0 auto", marginBottom: "20px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
 
 After creating a project, Promptless will begin analyzing and indexing your documentation. This initialization process typically takes a few minutes to complete, during which Promptless processes your documentation structure and content to ensure accurate suggestions. You'll be notified once the system is ready to handle triggers for your project.
 
-## Step 3: Configure Notification Settings
+## Step 3: Using Follow-on Requests
+
+When reviewing documentation updates in the Promptless dashboard, you may want to request additional changes or refinements to the initial suggestions. The follow-on request feature allows you to provide specific feedback and instructions for further improvements.
+
+To use follow-on requests in the web interface:
+
+1. Navigate to the documentation update you want to refine
+2. Review the suggested changes
+3. Use the follow-on request input field to provide specific instructions (e.g., "Please add more examples for the API endpoints" or "Expand the troubleshooting section with common errors")
+4. Submit your request
+5. Promptless will process your instructions and update the documentation suggestions accordingly
+
+Follow-on requests are particularly useful when the initial documentation update is good but needs specific adjustments or additional information. You can also make follow-on requests through PR comments if you're using GitHub integration with auto-publish enabled.
+
+## Step 4: Configure Notification Settings
 
 After creating your project, you can configure how you want to be notified about documentation updates from Promptless. We recommend creating a dedicated Slack channel for all documentation update notifications, which will help your team stay informed and coordinate on documentation improvements. You can configure this in your project settings.
 
