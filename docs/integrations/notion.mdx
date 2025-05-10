@@ -1,0 +1,54 @@
+# Notion Integration
+
+**Used for: Context**
+
+Promptless integrates with Notion through OAuth 2.0, providing secure access to your Notion workspaces and databases for documentation automation.
+
+## Installation
+
+1. Click "Connect Notion" from the [integrations page](https://app.gopromptless.ai/integrations).
+<img src="/img/integrations-blank.png" alt="Integrations Page" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
+2. You'll be redirected to Notion to authorize Promptless and select the workspace(s) you want to connect.
+<img src="/img/notion-auth.png" alt="Notion Authorization" style={{width:"400px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
+3. Once authorized, you'll be redirected back to Promptless, and you can verify that Notion is connected.
+<img src="/img/integrations-complete.png" alt="Notion Integration Complete" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", marginBottom: "20px"}} />
+
+## Viewing Connected Workspaces and Databases
+
+After connecting Notion, you can view your connected workspaces and their associated databases in the integrations page:
+
+1. Navigate to the [integrations page](https://app.gopromptless.ai/integrations)
+2. Find the Notion integration card
+3. You'll see a list of connected workspaces and the databases available within each workspace
+
+This visibility helps you understand which Notion databases Promptless can access when generating documentation.
+
+## Project Setup and Permissions
+
+When setting up a Project in the [projects page](https://app.gopromptless.ai/projects), you can configure which Notion workspaces and databases Promptless should use as context sources. This allows you to:
+
+- Limit Promptless to specific workspaces relevant to your project
+- Ensure documentation is created with the appropriate organizational context
+- Maintain data boundaries between different teams or projects
+
+## Authentication Model
+
+Promptless uses OAuth 2.0 to authenticate with Notion, following the [official Notion API authentication guidelines](https://developers.notion.com/docs/authorization). This ensures:
+
+- Secure token-based authentication
+- Ability to revoke access at any time
+- Workspace-level permission control
+- Regular token rotation for enhanced security
+
+## Using Notion as a Context Source
+
+When Promptless is triggered to update documentation, it can use your connected Notion databases as context sources to:
+
+1. Retrieve relevant information about your products, features, or processes
+2. Understand your organization's terminology and naming conventions
+3. Access structured data that helps create more accurate documentation
+4. Align documentation with existing knowledge in your Notion workspace
+
+This integration helps ensure that your documentation remains consistent with your team's knowledge base in Notion.
