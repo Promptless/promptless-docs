@@ -33,8 +33,6 @@ If you want to have both triggers, create two separate projects with all other i
 
 For GitHub or Bitbucket-based projects, you can enable auto-publish to automatically create pull requests with documentation changes. When enabled, Promptless will create a new PR with suggested documentation updates whenever it detects necessary changes, rather than requiring manual review and PR creation through the dashboard.
 
-When reviewing documentation updates in the dashboard, you can use the follow-on request feature to ask Promptless for additional changes or refinements to its initial suggestions. This is particularly useful when you want to provide specific feedback or request modifications to the proposed documentation updates.
-
 A new project for a Github PR trigger might look like this:
 
 <img src="https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/b738f190-487b-43e4-b3ad-1378d1e17fb1-new-project-modal.png" alt="Create New Project modal" style={{width:"600px", display: "block", margin: "0 auto", marginBottom: "20px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
@@ -44,5 +42,27 @@ After creating a project, Promptless will begin analyzing and indexing your docu
 ## Step 3: Configure Notification Settings
 
 After creating your project, you can configure how you want to be notified about documentation updates from Promptless. We recommend creating a dedicated Slack channel for all documentation update notifications, which will help your team stay informed and coordinate on documentation improvements. You can configure this in your project settings.
+
+## Reviewing and Refining Documentation Updates
+
+When Promptless generates documentation updates, you can review them in the dashboard. The review interface shows you:
+
+1. All files that have been modified, added, or deleted
+2. A side-by-side diff view of the changes
+3. A timeline of all changes made to the documentation
+
+If you want to refine the suggested documentation, you can use the follow-on request feature:
+
+1. In the dashboard, locate the "Request Additional Changes" section
+2. Enter specific instructions for how you'd like the documentation to be modified
+3. Submit your request, and Promptless will process it and suggest updated changes
+
+For GitHub or Bitbucket integrations, you can also provide follow-on requests directly as comments on the pull request or as inline comments on specific files. This allows you to give targeted feedback on particular sections of the documentation.
+
+The follow-on request feature is particularly useful when:
+- You want to modify the style or tone of the documentation
+- You need to add more details or examples to the suggested content
+- You want to reorganize the structure of the documentation
+- You need to correct any inaccuracies in the initial suggestions
 
 And that's it! Promptless will start listening for events on your Projects' triggers, and draft documentation updates for you to review.

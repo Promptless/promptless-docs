@@ -51,4 +51,20 @@ Promptless is automatically triggered in Intercom in two ways:
 1. **Conversation Close**: When a conversation with a customer is closed, Promptless analyzes the conversation for potential documentation updates
 2. **Note Added**: When a team member adds a note to a conversation, Promptless reviews the context for documentation opportunities
 
+## Follow-on Requests
+
+For all trigger types, Promptless provides a follow-on request feature that allows you to refine and improve the initial documentation suggestions. After Promptless generates documentation updates, you can:
+
+1. Review the suggested changes in the Promptless dashboard
+2. Request additional modifications by providing specific instructions
+3. See a timeline of all changes made to the documentation
+
+Follow-on requests are particularly useful when:
+- You want to modify the style or tone of the documentation
+- You need to add more details or examples to the suggested content
+- You want to reorganize the structure of the documentation
+- You need to correct any inaccuracies in the initial suggestions
+
+When using GitHub or Bitbucket integrations, you can also provide follow-on requests directly as comments on the pull request or as inline comments on specific files, allowing for targeted feedback on particular sections of the documentation.
+
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
