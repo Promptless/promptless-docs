@@ -51,4 +51,15 @@ Promptless is automatically triggered in Intercom in two ways:
 1. **Conversation Close**: When a conversation with a customer is closed, Promptless analyzes the conversation for potential documentation updates
 2. **Note Added**: When a team member adds a note to a conversation, Promptless reviews the context for documentation opportunities
 
+### Zendesk Integration
+
+When configured, Promptless integrates with your Zendesk support system to identify documentation opportunities from customer support interactions. This integration helps transform common support questions into improved documentation, reducing repeat tickets and enhancing self-service options for your customers.
+
+Promptless is triggered in Zendesk in two ways:
+
+1. **Ticket Resolution**: When a ticket status is updated to "Solved", Promptless analyzes the conversation for potential documentation updates
+2. **@Promptless Mentions**: Tag @Promptless in a ticket comment to manually trigger documentation analysis for specific support interactions
+
+This integration helps your support team contribute to documentation improvements without additional workflow steps. For detailed setup instructions, see the [Zendesk Integration](/integrations/zendesk) page.
+
 Promptless regularly adds new trigger types. If you need a specific trigger that isn't currently supported, please contact us at [help@gopromptless.ai](mailto:help@gopromptless.ai).
