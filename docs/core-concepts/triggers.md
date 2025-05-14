@@ -33,14 +33,24 @@ Promptless can be triggered directly from Slack in two ways:
 
 #### Image Processing in Slack Threads
 
-Promptless can now process images shared in Slack threads when triggered:
+Promptless can now process and incorporate images shared in Slack threads when triggered:
 
 - When you tag @Promptless or use the "Update docs" message action in a thread containing images, Promptless will analyze both the text and images.
-- If an image provides valuable context, Promptless will include it in the documentation updates.
+- Promptless intelligently evaluates which images provide valuable context for documentation and includes them appropriately.
 - Images are securely stored in an S3 bucket managed by Promptless and properly formatted for your documentation platform.
-- During review, you can see and approve the images that Promptless has added to the documentation.
 
-This feature requires the latest version of the Slack integration with appropriate permissions. See the [Slack Integration](/integrations/slack) page for more details.
+This feature is particularly valuable for:
+
+- **Product Documentation**: Add screenshots of new features directly from announcement threads
+- **Troubleshooting Guides**: Include error message screenshots shared during support conversations
+- **Tutorials**: Create visual step-by-step guides using screenshots shared in discussion threads
+- **User Guides**: Enhance explanations with UI screenshots from customer conversations
+
+For example, if you notify a customer about a new feature in a Slack Connect channel and include screenshots, you can trigger Promptless via the Slack Message Action, and it will automatically incorporate those screenshots into the appropriate documentation sections.
+
+During the review process, you can see and approve the images that Promptless has added to the documentation. After approval, the images become part of your documentation and can be managed through the Promptless dashboard.
+
+This feature requires the latest version of the Slack integration with appropriate permissions. See the [Slack Integration](/integrations/slack) page for more details on setup and image management.
 
 ### Intercom Integration
 
