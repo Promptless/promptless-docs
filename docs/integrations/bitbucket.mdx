@@ -91,4 +91,25 @@ Once configured, the Bitbucket integration works similarly to the GitHub integra
 4. Promptless adds a comment to your Bitbucket pull request with a link to review the documentation changes
 5. You can review and approve the suggested documentation updates in the Promptless dashboard
 
+### Replaying Recent Pull Requests
+
+If you've recently added a Bitbucket repository to Promptless or need to process a backlog of pull requests, you can use the "Replay Recent PRs" feature:
+
+1. Navigate to the **Projects** page in your Promptless dashboard
+2. Select the project that includes your Bitbucket repository
+3. Click on the **Actions** dropdown and select **Replay Recent PRs**
+4. Choose the Bitbucket repository you want to process
+5. Optionally, adjust the limit for how many recent PRs to process (default is 50)
+6. Click **Start Replay** to begin processing
+
+This feature will:
+- Fetch the most recent pull requests from your Bitbucket repository
+- Skip any PRs that have "Automation" in their title to avoid processing automated changes
+- Process each PR through Promptless to generate documentation updates if needed
+
+This is particularly useful when:
+- You've just set up Promptless and want to catch up on existing PRs
+- You've added a new repository and want to ensure documentation is up-to-date
+- You need to reprocess PRs after updating your documentation settings
+
 For more information on how triggers work in general, see the [Triggers](/core-concepts/triggers) documentation.
