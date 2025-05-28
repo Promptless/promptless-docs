@@ -55,6 +55,35 @@ To set up directory-specific triggers:
 2. Under **Advanced Options**, enable **Directory-Specific Triggers**
 3. Enter the directories you want to monitor, separated by commas (e.g., `src/api, docs/reference`)
 
+## Publishing Workflow
+
+When Promptless creates or updates documentation for your Bitbucket-hosted repositories:
+
+1. Documentation changes are prepared based on your triggers and context sources
+2. Review the suggested changes in the Change History page
+3. Click **"Save All & Update Bitbucket"** to publish directly to your documentation repository
+4. Changes are automatically committed to the specified branch in your Bitbucket repository
+5. View the published changes in your Bitbucket repository and documentation site
+
+### Publishing from Change History
+
+The Change History page provides a streamlined publishing experience for Bitbucket repositories:
+
+- **Direct Publishing**: Use the "Save All & Update Bitbucket" button to commit all changes at once
+- **Branch Management**: Automatically create pull requests or commit directly to your documentation branch
+- **Real-time Updates**: See publishing progress with loading indicators and commit status
+- **Success Confirmation**: Receive confirmation when changes are successfully committed to Bitbucket
+- **Error Handling**: Get clear error messages if publishing encounters repository access issues
+
+### Auto-Publish Configuration
+
+For streamlined workflows, you can enable auto-publish functionality:
+
+- **Automatic Commits**: Documentation updates are automatically committed to your repository
+- **PR Creation**: Optionally create pull requests for documentation changes that require review
+- **Branch Strategy**: Configure whether to commit to main branch or create feature branches
+- **Commit Messages**: Automatic generation of descriptive commit messages with trigger context
+
 ## Authentication Model
 
 The Bitbucket integration uses a username and app password authentication model:
@@ -83,12 +112,29 @@ Promptless automatically sets up webhooks in your Bitbucket repositories to moni
 
 ## Usage
 
-Once configured, the Bitbucket integration works similarly to the GitHub integration:
+Once configured, the Bitbucket integration works to automate your documentation workflow:
 
 1. When a pull request is opened or updated in your monitored repositories, Promptless is automatically triggered
 2. Promptless analyzes the changes to determine if documentation updates are needed
 3. If updates are needed, Promptless generates the appropriate documentation changes
 4. Promptless adds a comment to your Bitbucket pull request with a link to review the documentation changes
 5. You can review and approve the suggested documentation updates in the Promptless dashboard
+6. Use the Change History page to publish approved changes directly to your documentation repository
+
+## Best Practices
+
+- **Review Before Publishing**: Always review documentation changes in the Change History page before publishing
+- **Branch Strategy**: Consider using feature branches for documentation updates that require team review
+- **Commit History**: Maintain clean commit history with descriptive messages for documentation changes
+- **Repository Organization**: Keep documentation repositories well-organized with clear directory structures
+
+## Troubleshooting
+
+Common issues and solutions:
+
+- **Publishing Errors**: Ensure your app password has write permissions to the target repository
+- **Webhook Issues**: Verify that webhooks are properly configured and accessible
+- **Permission Problems**: Check that your Bitbucket account has the necessary repository access
+- **Branch Conflicts**: Resolve any merge conflicts in your documentation repository before publishing
 
 For more information on how triggers work in general, see the [Triggers](/core-concepts/triggers) documentation.
