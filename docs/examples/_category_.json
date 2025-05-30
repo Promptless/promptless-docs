@@ -1,0 +1,8 @@
+{
+  "label": "Examples",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Example content for testing integrations with various CMS platforms"
+  }
+}
