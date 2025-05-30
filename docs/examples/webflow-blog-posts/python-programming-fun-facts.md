@@ -85,16 +85,6 @@ These fun facts illustrate why Python has become such a phenomenon in the progra
 
 Whether you're just starting your programming journey or you're a seasoned developer, Python's combination of humor, simplicity, and power makes it a joy to work with. And who knows? Your next Python project might be the one that helps us reach Mars or connects the next billion people on social media.
 
-### Want to Learn Python?
-
-If these facts have sparked your interest in Python, here are some great places to start:
-- **Python.org** - The official Python website with tutorials and documentation
-- **Codecademy** - Interactive Python courses for beginners
-- **Real Python** - In-depth tutorials and articles
-- **Python Package Index (PyPI)** - Explore the vast ecosystem of Python libraries
-
-Remember, every expert was once a beginner, and with Python's beginner-friendly syntax and supportive community, there's never been a better time to start your Python journey!
-
 ---
 
 *Enjoyed these Python fun facts? Follow our blog for more fascinating insights into the world of programming and technology.*
