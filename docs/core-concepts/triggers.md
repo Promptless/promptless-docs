@@ -14,6 +14,14 @@ When configured, Promptless automatically runs whenever a new pull request is op
 
 During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
 
+### GitLab Merge Requests
+
+Similar to GitHub, Promptless can be triggered by merge requests in GitLab projects. When a new merge request is opened in your specified GitLab projects, Promptless analyzes the changes and suggests documentation updates if needed. You can configure specific directories to monitor for changes, allowing you to focus documentation efforts on the most relevant parts of your codebase.
+
+The workflow for GitLab triggers follows the same pattern as GitHub triggers, with options for auto-publishing and follow-on requests to streamline your documentation process. Promptless will add comments to your GitLab merge requests indicating whether documentation updates were necessary, and if so, provide links to review those changes.
+
+GitLab integration provides access to all projects within your accessible groups, making it easy to manage documentation across your entire GitLab organization.
+
 ### Bitbucket Pull Requests
 
 Similar to GitHub, Promptless can be triggered by pull requests in Bitbucket repositories. When a new pull request is opened in your specified Bitbucket repositories, Promptless analyzes the changes and suggests documentation updates if needed. You can configure specific directories to monitor for changes, allowing you to focus documentation efforts on the most relevant parts of your codebase.

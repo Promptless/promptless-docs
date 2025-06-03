@@ -1,0 +1,107 @@
+---
+sidebar_position: 4
+---
+
+# GitLab Integration
+
+**Used for: Triggers and Publishing**
+
+Promptless integrates with GitLab to automatically update your documentation when merge requests are created or updated. This integration connects to your GitLab groups and projects, providing comprehensive access to all projects within your accessible groups.
+
+## Installation
+
+To set up the GitLab integration:
+
+1. Navigate to the **Integrations** page in your Promptless dashboard
+2. Click on **Connect** next to the GitLab option
+3. Enter your **Group Access Token** with appropriate permissions
+
+:::tip Creating a GitLab Group Access Token
+To create a group access token with the right permissions:
+1. Go to your GitLab group settings
+2. Navigate to **Access Tokens** under **Settings**
+3. Click **Add new token**
+4. Give it a descriptive name like "Promptless Integration"
+5. Set an appropriate expiration date
+6. Select the following scopes:
+   - **read_api**: To read group and project information
+   - **read_repository**: To access repository content
+   - **write_repository**: To create merge requests for documentation updates
+:::
+
+## How GitLab Integration Works
+
+When you connect GitLab to Promptless, the system:
+
+1. **Discovers Your Groups**: Promptless identifies all GitLab groups accessible with your token
+2. **Determines Primary Group**: Automatically selects the top-level group (with the shortest path) as your primary group
+3. **Fetches All Projects**: Retrieves comprehensive information about all projects across all accessible groups
+4. **Organizes Project Data**: Stores project IDs, names, and full paths for easy selection and management
+
+This approach ensures you have access to all relevant projects within your GitLab organization, regardless of which specific group they belong to.
+
+## Project Setup
+
+After connecting your GitLab account, you can configure projects in Promptless:
+
+### Repository Selection
+
+When creating a project with GitLab as a trigger source:
+
+1. **Select Projects**: Choose from all projects accessible through your group token
+2. **Project Display**: Projects are shown with their full path (e.g., `group/subgroup/project-name`)
+3. **Project Identification**: Each project is uniquely identified by its GitLab project ID
+
+### Directory-Specific Triggers
+
+You can configure Promptless to only trigger documentation updates when changes are made to specific directories in your GitLab projects:
+
+1. In your project configuration, select the GitLab project
+2. Under **Advanced Options**, enable **Directory-Specific Triggers**
+3. Enter the directories you want to monitor, separated by commas (e.g., `src/api, docs/reference`)
+
+This is particularly useful for:
+- Focusing on code that directly impacts user-facing features
+- Monitoring API changes that require documentation updates
+- Ignoring internal tooling or test changes that don't affect documentation
+
+## Authentication Model
+
+The GitLab integration uses group access token authentication:
+
+- **Group Access Token**: A secure token with specific permissions for the Promptless integration
+- **Group-Level Access**: Provides access to all projects within the accessible groups
+- **Project Scope**: Limited to projects within groups where the token has permissions
+
+This authentication model ensures that Promptless has appropriate access to your GitLab projects while maintaining security boundaries.
+
+## Group and Project Management
+
+The GitLab integration provides visibility into your GitLab organization structure:
+
+- **Primary Group Display**: Shows your main group name in the integrations list
+- **Project Count**: Displays the total number of accessible projects
+- **Project Organization**: Projects are organized by their full GitLab paths for easy identification
+
+If you add new projects to your GitLab groups or modify group permissions, the project list will be updated automatically when you reconnect or refresh the integration.
+
+## Usage
+
+Once configured, the GitLab integration works as follows:
+
+1. **Merge Request Monitoring**: When a merge request is opened or updated in your monitored projects, Promptless is automatically triggered
+2. **Change Analysis**: Promptless analyzes the changes to determine if documentation updates are needed
+3. **Documentation Generation**: If updates are needed, Promptless generates appropriate documentation changes
+4. **Merge Request Comments**: Promptless adds a comment to your GitLab merge request with a link to review the documentation changes
+5. **Review Process**: You can review and approve the suggested documentation updates in the Promptless dashboard
+
+## Project Display
+
+In the Promptless dashboard, GitLab projects are displayed with:
+- **GitLab Logo**: Visual identification of GitLab-sourced projects
+- **Project Names**: Full project names as they appear in GitLab
+- **Path Information**: Complete project paths for easy identification
+
+This makes it easy to distinguish between projects from different version control systems and understand the full context of each project.
+
+For more information on how triggers work in general, see the [Triggers](/core-concepts/triggers) documentation.
