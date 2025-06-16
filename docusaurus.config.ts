@@ -51,6 +51,7 @@ const config: Config = {
       logo: {
         alt: 'Promptless Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo_darkbg.svg',
       },
       items: [
         {
