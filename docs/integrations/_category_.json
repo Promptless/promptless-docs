@@ -1,8 +1,4 @@
 {
   "label": "Integrations",
-  "position": 7,
-  "link": {
-      "type": "generated-index",
-      "description": "Other tools Promptless can integrate with"
-  }
+  "position": 7
 }
