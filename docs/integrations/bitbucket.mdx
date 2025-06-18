@@ -55,6 +55,17 @@ To set up directory-specific triggers:
 2. Under **Advanced Options**, enable **Directory-Specific Triggers**
 3. Enter the directories you want to monitor, separated by commas (e.g., `src/api, docs/reference`)
 
+### Replay Recent Pull Requests
+
+When setting up a new Bitbucket project, you can optionally enable the replay feature to analyze recent pull requests from the past 1-30 days. This is particularly useful when you're adding Promptless to an existing project and want to catch up on documentation for changes that occurred before Promptless was configured.
+
+To enable this feature:
+1. Check the "Replay Pull Requests from the last" checkbox when creating your project
+2. Specify the number of days (1-30) to look back for recent PRs
+3. Promptless will automatically analyze these recent changes and suggest documentation updates as needed
+
+This feature respects your project's directory-specific trigger settings if configured, so it will only analyze PRs that contain changes to your specified directories.
+
 ## Authentication Model
 
 The Bitbucket integration uses a username and app password authentication model:

@@ -14,6 +14,8 @@ When configured, Promptless automatically runs whenever a new pull request is op
 
 During the review process, if you need additional changes or have specific requests for the documentation updates, you can use the follow-on request feature. This allows you to provide additional instructions or feedback to Promptless, which will then process your request and suggest updated changes based on your input.
 
+When setting up a new GitHub project, you can optionally enable the replay feature to analyze recent pull requests from the past 1-30 days. This helps catch up on documentation for changes that occurred before Promptless was configured.
+
 ### Bitbucket Pull Requests
 
 Similar to GitHub, Promptless can be triggered by pull requests in Bitbucket repositories. When a new pull request is opened in your specified Bitbucket repositories, Promptless analyzes the changes and suggests documentation updates if needed. You can configure specific directories to monitor for changes, allowing you to focus documentation efforts on the most relevant parts of your codebase.
@@ -21,6 +23,8 @@ Similar to GitHub, Promptless can be triggered by pull requests in Bitbucket rep
 The workflow for Bitbucket triggers follows the same pattern as GitHub triggers, with options for auto-publishing and follow-on requests to streamline your documentation process. Promptless will add comments to your Bitbucket pull requests indicating whether documentation updates were necessary, and if so, provide links to review those changes.
 
 Note that Promptless automatically skips draft pull requests in Bitbucket. Documentation updates will only be triggered when the pull request is marked as ready for review.
+
+When setting up a new Bitbucket project, you can optionally enable the replay feature to analyze recent pull requests from the past 1-30 days. This helps catch up on documentation for changes that occurred before Promptless was configured.
 
 ### Slack Integration
 

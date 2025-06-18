@@ -44,6 +44,17 @@ For example, in the below example, Promptless is only able to read the `promptle
 
 <img src="/img/Github-project.png" alt="Project Setup" style={{width:"800px", display: "block", margin: "0 auto", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
 
+### Replay Recent Pull Requests
+
+When setting up a new GitHub project, you can optionally enable the replay feature to analyze recent pull requests from the past 1-30 days. This is particularly useful when you're adding Promptless to an existing project and want to catch up on documentation for changes that occurred before Promptless was configured.
+
+To enable this feature:
+1. Check the "Replay Pull Requests from the last" checkbox when creating your project
+2. Specify the number of days (1-30) to look back for recent PRs
+3. Promptless will automatically analyze these recent changes and suggest documentation updates as needed
+
+This feature respects your project's directory-specific trigger settings if configured, so it will only analyze PRs that contain changes to your specified directories.
+
 ## Trigger Events in Pull Request Descriptions
 
 When Promptless creates a pull request for documentation updates, it automatically includes a list of the trigger events that led to those changes in the PR description. This provides valuable context for reviewers and creates clear traceability between documentation updates and their originating events.
