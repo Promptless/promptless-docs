@@ -1,0 +1,59 @@
+---
+sidebar_position: 4.5
+---
+
+# Common Use Cases for Promptless
+
+Here are some practical examples of how teams use Promptless trigger sources to automatically maintain their documentation.
+
+## Use Case 1: Automated Documentation Updates from Code Changes
+
+**Scenario**: Your development team regularly ships new features and API changes, but documentation often lags behind code updates.
+
+**How Promptless Helps**: 
+- **Trigger**: GitHub or Bitbucket pull requests
+- **Workflow**: When developers create pull requests with new features or API changes, Promptless automatically analyzes the code changes and suggests relevant documentation updates
+- **Result**: Your API documentation, integration guides, and feature documentation stay current with each release without manual intervention
+
+**Example**: A developer adds a new authentication endpoint to your API. Promptless detects this change in the pull request, analyzes the code, and automatically suggests updates to your API documentation including the new endpoint details, parameters, and example requests.
+
+## Use Case 2: Customer Support-Driven Documentation Improvements
+
+**Scenario**: Your support team frequently answers the same questions from customers, but these insights don't make it back to your documentation.
+
+**How Promptless Helps**:
+- **Trigger**: Slack integration with support channels or Intercom conversations
+- **Workflow**: When support conversations reveal common questions or issues, team members can tag @Promptless in Slack or let Promptless automatically analyze closed Intercom conversations
+- **Result**: Frequently asked questions become documented solutions, reducing future support volume
+
+**Example**: A customer asks about setting up webhooks in a Slack support channel. After the support team provides the solution, they tag @Promptless in the thread. Promptless analyzes the conversation and suggests adding a comprehensive webhook setup guide to the documentation, complete with the specific steps that resolved the customer's issue.
+
+**Real-World Example**: Companies like Vellum use this exact workflow:
+1. Customer asks a question in a Slack Connect channel
+2. Support team member answers the question
+3. They click the "Update Docs" message action that Promptless provides
+4. Promptless updates the documentation and notifies when it's complete
+
+![Slack Message Action Example](https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/1d5bcf35-80fc-45a1-854d-2a19038d1015-slack-message-action-example.png)
+
+## Use Case 3: Cross-Team Knowledge Sharing
+
+**Scenario**: Important product knowledge is scattered across team discussions, but it never makes it into official documentation where other team members can find it.
+
+**How Promptless Helps**:
+- **Trigger**: Slack mentions in team channels
+- **Workflow**: When team discussions contain valuable insights about product features, implementation details, or troubleshooting solutions, team members can tag @Promptless to capture this knowledge
+- **Result**: Tribal knowledge becomes documented knowledge, accessible to current and future team members
+
+**Example**: During a team discussion about database migration best practices, several engineers share their experiences and solutions. A team member tags @Promptless in the thread, and Promptless suggests creating a new troubleshooting guide that captures these insights for the engineering team's internal documentation.
+
+## Getting Started with These Use Cases
+
+To implement these workflows in your organization:
+
+1. **Set up your triggers** in the Promptless dashboard by connecting your GitHub/Bitbucket repositories, Slack workspace, or Intercom account
+2. **Configure your projects** to specify which repositories should trigger documentation updates and where those updates should be published
+3. **Train your team** on when and how to use @Promptless mentions in Slack to capture valuable knowledge
+4. **Review and refine** the suggested documentation updates to ensure they meet your quality standards
+
+For detailed setup instructions, see our [Getting Started guide](/getting-started).
