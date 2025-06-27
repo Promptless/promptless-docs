@@ -33,6 +33,8 @@ If you want to have both triggers, create two separate projects with all other i
 
 For GitHub or Bitbucket-based projects, you can enable auto-publish to automatically create pull requests with documentation changes. When enabled, Promptless will create a new PR with suggested documentation updates whenever it detects necessary changes, rather than requiring manual review and PR creation through the dashboard.
 
+You can also configure excluded directories to prevent Promptless from analyzing or making suggestions for specific directories in your documentation repository. This is useful for excluding internal documentation, deprecated content, or directories that shouldn't be modified by automated processes. Simply check the "Exclude specific directories from Promptless suggestions" option and specify the directory paths (separated by commas) that you want to exclude.
+
 When reviewing documentation updates in the dashboard, you can use the follow-on request feature to ask Promptless for additional changes or refinements to its initial suggestions. This is particularly useful when you want to provide specific feedback or request modifications to the proposed documentation updates.
 
 A new project for a Github PR trigger might look like this:
