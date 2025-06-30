@@ -38,6 +38,17 @@ You can also configure excluded directories to prevent Promptless from analyzing
 
 When reviewing documentation updates in the dashboard, you can use the follow-on request feature to ask Promptless for additional changes or refinements to its initial suggestions. This is particularly useful when you want to provide specific feedback or request modifications to the proposed documentation updates.
 
+### Replay Recent PRs/MRs
+
+When setting up a new GitHub, Bitbucket, or GitLab project, you can choose to have Promptless analyze recent pull requests or merge requests from the past 1-30 days. This "replay" feature is particularly useful when you're setting up Promptless for an existing project and want to catch up on documentation for recent changes that occurred before Promptless was configured.
+
+To enable this feature:
+1. Check the "Replay Pull Requests from the last" checkbox when creating your project
+2. Specify the number of days (1-30) to look back for recent PRs/MRs
+3. Promptless will automatically analyze these recent changes and suggest documentation updates as needed
+
+This feature works for all supported repository platforms (GitHub, Bitbucket, and GitLab) and respects your project's directory-specific trigger settings if configured.
+
 A new project for a Github PR trigger might look like this:
 
 <img src="https://promptless-customer-doc-assets.s3.amazonaws.com/docs-images/org_2lvkgU9erOFxYhtEVVC0ymPrPdF/80863009-2671-4d86-91d6-95633becce22-new-project-modal-updated.png" alt="Create New Project modal" style={{width:"700px", display: "block", margin: "0 auto", marginBottom: "20px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"}} />
