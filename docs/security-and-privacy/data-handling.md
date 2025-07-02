@@ -64,6 +64,14 @@ Enterprise plan customers receive access to advanced authentication capabilities
 - Data at rest (both in primary data stores and secondary backups) is protected using AES-256 encryption, with keys managed through a secure key management system
 - Backup data is encrypted using independent encryption keys for additional security
 
+### Multi-Tenant Architecture and Data Isolation
+
+Promptless operates on a shared infrastructure model with strong logical data separation, reflecting best-practices for modern SaaS applications:
+
+- **Organization-Based Data Tagging**: Every piece of customer data is tagged with an organization ID, and all server operations are scoped to the requesting organization. 
+- **Authorization Controls**: All authorization mechanisms ensure users can only access data tagged with organizations they have permission to access, ensuring logical separation of data and preventing any data leakage
+- **Data Processing Isolation**: Customer data processing is isolated per organization during all operations. Suggestions, triggers, and documentation updates are organization-scoped
+
 ## Enterprise Security Support
 
 Enterprise customers may request additional security features and support, such as custom data retention policies. 
