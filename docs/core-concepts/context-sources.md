@@ -8,7 +8,9 @@ Context sources are integrations that connect Promptless to your organization's 
 
 ## Data Privacy and Storage
 
-Promptless prioritizes your data privacy and security. We do not store any of your organization's data from context sources. Instead, our agents query the relevant APIs in real-time when documentation updates are needed, ensuring that we only access the information required for the specific documentation task at hand.
+Promptless processes context source data in real-time without permanent storage. We only access the information required for specific documentation tasks.
+
+For comprehensive data handling details, see our [Security and Privacy documentation](/security-and-privacy/data-handling).
 
 ## Additional Context Sources
 

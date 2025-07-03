@@ -72,12 +72,9 @@ This feature requires additional Slack permissions to access images in threads. 
 
 **Note:** Currently, image processing is only supported for images directly shared in Slack threads. Images from other sources (such as changelogs or external links) are not automatically processed.
 
-## Authentication Model
+## Authentication
 
-Promptless uses Slack's [official App authentication](https://api.slack.com/authentication), which provides:
+Promptless uses Slack's [official App authentication](https://api.slack.com/authentication) with granular permission scopes. You can revoke access at the workspace or channel level through your Slack settings.
 
-- Secure OAuth 2.0 token-based authentication
-- Granular permission scopes
-- Ability to revoke access at the workspace or channel level
-- Regular token rotation for enhanced security
+For detailed security information, see our [Security and Privacy documentation](/security-and-privacy).
 
